@@ -1,5 +1,7 @@
 #Probailistic Graphical Models
 
+[Blog Link](http://www.freopen.com/?p=10846)
+
 开个坑...去年因某种不可抗力...追了一半就被迫停止了...现在捡一下...但愿还能捡的起来... lol
 
 前两章是预备知识
@@ -168,7 +170,7 @@ MN上的独立性比BN上简单,因为MN上没有v-structure.所以随便就能Y
 
 ##4.4 Parameterization Revisited
 
-同一个MN可以有不同的表示方式,一种是一个clique一个factor,另一种是一条边一个factor
+同一个MN可以有不同的表示方式,一种是一个clique一个factor,另一种是一条边一个factor.
 
 ###4.4.1 Finer-Grained Parameterization
 
@@ -176,9 +178,23 @@ MN上的独立性比BN上简单,因为MN上没有v-structure.所以随便就能Y
 
 ###4.5.1 From Bayesian Networks to Markov Networks
 
+一个节点和他的parents们组成一个clique,这个叫Moralizing. 这就是BN的转换成的一个 minimal I-map MN.
+
+如果一个BN是moral的,转换出来的MN是perfect的,很简单,没有v-structure.
+
 ###4.5.1 From Markov Networks to Bayesian Networks
 
+转换方法很简单,依次加入新的点,如果新的节点和旧节点没有条件独立,那么就加一条旧节点到新节点的边.
+
+MN转换到的BN minimal I-map没有immoralities.
+
+如果BN上有4个节点以上的loop,那么至少有一个immorality.
+
 ###4.5.3 Chordal Graphs
+
+BN和MN都能表示的交集
+
+clique tree
 
 ##4.6* Partially Directed Models
 
