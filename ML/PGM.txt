@@ -104,7 +104,7 @@ P-Map可能存在也可能存在多个.
 
 如果还有无向边,就找符合这三条规则的边,然后标记方向.
 
-#Chapter 4: Undirecrted Graphical Models
+#Chapter 4: Undirected Graphical Models
 
 Markov network
 
@@ -201,3 +201,25 @@ clique tree
 #Chapter 9 Exact Inference: Variable Elimination
 
 #Chapter 10 Exact Inference: Clique Trees
+
+##10.1 Variable Elimination and Clique Trees
+
+**Definition 10.2** 在cluster tree上,如果两个节点都含有x,那么中间节点也都含有x.
+
+##10.2 Message Passing: Sum Product
+
+这个本质还是VE,不过可以在clique tree上做dp,这样所有变量的post probablity可以在2c的时间内计算出来.
+
+##10.3 Message Passing: Belief Update
+
+这个挺有意思的,本质还是Sum Product.不过是用的不同的观点来看这件事情.
+
+我们注意到一个节点i到j传递的信息\alpha_{i->j} = \beta_i / \alpha_{j->i}.
+
+所以我们初始化所有的\alpha_{i->j}都为1,然后随意更新,直到全部稳定.每条边记录当前的消息u_{i->j},更新\beta_j *= \alpha_{i->j} / u_{i->j}
+
+如果我们按照Sum Product的顺序来来更新,肯定是最高效的,所以这只是另一个角度看待Message Passing,并没有提供更好的做法.
+
+###10.3.3 Answering Queries
+
+##10.4 Constructing a Clique Tree
