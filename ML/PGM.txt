@@ -214,9 +214,9 @@ clique tree
 
 这个挺有意思的,本质还是Sum Product.不过是用的不同的观点来看这件事情.
 
-我们注意到一个节点i到j传递的信息\alpha_{i->j} = \beta_i / \alpha_{j->i}.
+我们注意到一个节点i到j传递的信息$latex \alpha_{i->j} = \beta_i / \alpha_{j->i}$.
 
-所以我们初始化所有的\alpha_{i->j}都为1,然后随意更新,直到全部稳定.每条边记录当前的消息u_{i->j},更新\beta_j *= \alpha_{i->j} / u_{i->j}
+所以我们初始化所有的$latex \alpha_{i->j}$都为1,然后随意更新,直到全部稳定.每条边记录当前的消息$latex u_{i->j}$,更新$latex \beta_j *= \alpha_{i->j} / u_{i->j}$.
 
 如果我们按照Sum Product的顺序来来更新,肯定是最高效的,所以这只是另一个角度看待Message Passing,并没有提供更好的做法.
 
