@@ -222,4 +222,16 @@ clique tree
 
 ###10.3.3 Answering Queries
 
+**Incremental Updates** : 被观察到的变量不断增多,刷新概率. 比较暴力的方法就是每次redo the process from beginning.
+
+这个很适合用Belief Update,技术角度讲,SP和BU保持的信息量一样的,而BU是更新单一变量的方法.
+
+**Queries Outside a Clique** : 查询的变量不在同一个clique里面.
+
+找到一个含有所有查询变量的子树,然后做VE.因为已经求出了$\beta$和$\u$,所以不是对整颗树做VE,可以加速.
+
+**Multiple Queries** :
+
+这个算法也很简单,对每一对相邻的$C_i$和$C_j$预处理$P(C_i,C_j)$,每次求解可以dp.
+
 ##10.4 Constructing a Clique Tree
