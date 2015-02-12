@@ -1,6 +1,6 @@
 #Probailistic Graphical Models
 
-[Blog Link](http://www.freopen.com/?p=10846)
+[the link to my blog](http://www.freopen.com/?p=10846)
 
 开个坑...去年因某种不可抗力...追了一半就被迫停止了...现在捡一下...但愿还能捡的起来... lol
 
@@ -224,7 +224,7 @@ clique tree
 
 **Incremental Updates** : 被观察到的变量不断增多,刷新概率. 比较暴力的方法就是每次redo the process from beginning.
 
-这个很适合用Belief Update,技术角度讲,SP和BU保持的信息量一样的,而BU是更新单一变量的方法.
+这类查询很适合用Belief Update,技术角度讲,SP和BU保持的信息量一样的,而BU是更新单一变量的方法.
 
 **Queries Outside a Clique** : 查询的变量不在同一个clique里面.
 
@@ -235,3 +235,17 @@ clique tree
 这个算法也很简单,对每一对相邻的$C_i$和$C_j$预处理$P(C_i,C_j)$,每次求解可以dp.
 
 ##10.4 Constructing a Clique Tree
+
+介绍了两种构建的方式:
+
+**Variable Elimination** : VE的过程其实就是在创建Clique Tree,所以直接记录下来就可以了.
+
+**Chordal Graphs** : 这个也简单,先把图转换成chordal图,然后再转成clique,这两步的精确解都是NPC问题.
+  * chordal graphs: node-elimination techniques in section 9.4.3.2
+  * find cliques: maximum cardinality search.
+
+#Chapter 11: Inference as Optimization*
+
+和第十章连在一起的一章,有必要读一下.
+
+#Chapter 12: Particle-Based Approximate Inference
