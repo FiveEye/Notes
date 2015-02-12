@@ -47,10 +47,9 @@ Proof.
 Qed.
 </pre>
 
-
 #Coq'Art
 
-#Chapter 2
+#Chapter 2 类型和表达式
 
 ##2.4 计算
 
@@ -127,3 +126,42 @@ Prop大类
 ##3.1 最小命题逻辑
 
 intros, apply, assumption
+
+#Chapter 4 依赖积
+
+#Chapter 5 常用逻辑
+
+#Chapter 6 归纳数据类型
+
+##枚举类型
+
+<pre>
+Inductive M : Set :=
+  | A | B.
+
+Check M_ind.
+
+M_ind : forall P : M -> Prop,
+  P A -> P B -> forall m : M, P m
+</pre>
+
+这里展示ind如何构建forall.
+
+<pre>
+Theorem M_equal : forall m : M, m = A \/ m = B.
+Proof.
+  (*intro m; pattern m; apply M_ind.*)
+  induction m.
+  apply or_introl.
+  exact eq_refl.
+  apply or_intror.
+  exact eq_refl.
+Qed.
+
+</pre>
+
+#Chapter 7 证明策略和自动化证明
+
+#Chapter 8 归纳谓词
+
+#Chapter 9 函数及其规范
