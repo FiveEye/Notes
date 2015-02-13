@@ -125,7 +125,46 @@ Prop大类
 
 ##3.1 最小命题逻辑
 
-intros, apply, assumption
+不是经典逻辑,没有排中率,不承认非真即假.
+
+全局变量
+
+Axiom x : P.
+
+Parameter x : P.
+
+局部变量
+
+Hypothesis h : P.
+
+Variable h : P.
+
+定理和引理
+Theorem Lemma
+
+匿名证明 Goal
+
+最基础的策略
+intros, apply, assumption, exact
+
+##3.4 证明的无关性
+
+这里讲的很有意思,Theorem和Definition是等价的.但Theorem是不透明的.
+
+<pre>
+Theorem nat_exist : nat.
+Proof 0.
+
+Check nat_exist.
+Print nat_exist.
+
+Definition nat_exist' : nat := 0.
+Check nat_exist'.
+Print nat_exist'.
+
+Eval compute in 1 + nat_exist.
+Eval compute in 1 + nat_exist'.
+</pre>
 
 #Chapter 4 依赖积
 
