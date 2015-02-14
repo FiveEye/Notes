@@ -139,17 +139,15 @@ Hypothesis h : P.
 
 Variable h : P.
 
-定理和引理
-Theorem Lemma
+定理和引理 Theorem Lemma
 
 匿名证明 Goal
 
-最基础的策略
-intros, apply, assumption, exact
+最基础的策略 intros, apply, assumption, exact
 
 ##3.4 证明的无关性
 
-这里讲的很有意思,Theorem和Definition是等价的.但Theorem是不透明的.
+这里讲的很有意思,Theorem和Definition是等价的.但Theorem是不透明的.所以Theorem没办法进行deta-归约.
 
 <pre>
 Theorem nat_exist : nat.
@@ -165,6 +163,34 @@ Print nat_exist'.
 Eval compute in 1 + nat_exist.
 Eval compute in 1 + nat_exist'.
 </pre>
+
+##3.6 证明策略的结合
+
+简单组合使用分号 tac0; tac1.
+
+处理各个子目标使用 tac0;[tac1 | tac2].
+
+orelse (tac0 || tac1).
+
+idtac 什么都不做
+
+fail 失败
+
+try策略 try tac = tac || idtac.
+
+##3.7 命题逻辑的完备性
+
+((P->Q)->P)->P 不可证.
+
+##3.8 其他证明策略
+
+cut策略: 需要证明P,引入Q->P,然后证明Q. exercise 3.5
+
+assert策略: 引入新的事实.
+
+两个自动证明策略: auto和trivial.
+
+结束的时候提了一下forall.
 
 #Chapter 4 依赖积
 
