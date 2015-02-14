@@ -196,6 +196,46 @@ assert策略: 引入新的事实.
 
 #Chapter 5 常用逻辑
 
+这章就是介绍各种策略的,最后非直谓逻辑好像很好玩.
+
+###5.1.3 apply
+
+apply with (z:=Z)
+
+eapply
+
+Search Zle.
+
+SearchPattern (_ + _ <= _)%Z.
+
+###5.1.4 unfold
+
+###5.2.1 intros elim
+
+###5.2.2 False
+
+###5.2.3 not
+
+###5.2.4 split left right
+
+###5.2.5 repeat
+
+###5.2.6 exists
+
+###5.3.1 reflexivity
+
+###5.3.2 rewrite <-> e in H
+
+###5.3.3 pattern x at 1.
+
+###5.3.4 条件重写
+
+###5.3.5 SearchRewrite p
+
+###5.3.6 replace cutrewrite symmetry transitivity
+
+##5.5 非直谓定义
+
 #Chapter 6 归纳数据类型
 
 ##枚举类型
