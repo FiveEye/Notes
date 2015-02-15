@@ -2,11 +2,13 @@
 
 ##Machine Learning
 
-[Probailistic Graphical Models](https://github.com/FiveEye/Notes/blob/master/ML/PGM.md)
+**Probailistic Graphical Models**
+  1. [Representation](https://github.com/FiveEye/Notes/blob/master/ML/PGM_1_Representation.md)
+  2. [Inference](https://github.com/FiveEye/Notes/blob/master/ML/PGM_2_Inference.md)
 
 ##Programming Language
 
-[Coq'Art](https://github.com/FiveEye/Notes/blob/master/PL/coq_art_note.md)
+[**Coq'Art**](https://github.com/FiveEye/Notes/blob/master/PL/coq_art_note.md)
 
   * [my solution for Coq'Art](https://github.com/FiveEye/Notes/blob/master/PL/coq_art_exercise.md)
 
