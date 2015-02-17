@@ -53,3 +53,25 @@
 #Chapter 12: Particle-Based Approximate Inference
 
 Particle-based methods can be roughly characterized along two axes. On one axis, approaches vary on the process by which particles are generated. On the other axis, techniques use different notions of particle.
+
+##12.1 Forward Sampling
+
+The simplest approach to the generation of particles. Finding a topological ordering of X, then sampling.
+
+###12.1.2 Analysis of Error
+
+###12.1.3 Conditional Probability Queries
+
+**Rejection Sampling**: do forward sampling but throw out sample where $latex E \neq e$
+
+##12.2 Likelihood Weighting and Importance Sampling
+
+###12.2.1 Likelihood Weighting: Intuition
+
+##12.3 Markov Chain Monte Carlo Mothods
+
+###12.3.1 Gibbs Sampling Algorithm
+
+###12.3.2 Markov Chains
+
+###12.3.3 Gibbs Sampling Revisited
