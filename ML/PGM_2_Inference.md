@@ -58,7 +58,31 @@ Particle-based methods can be roughly characterized along two axes. On one axis,
 
 The simplest approach to the generation of particles. Finding a topological ordering of X, then sampling.
 
+Because the Bayesian network is a DAG, so it is easy to use topological ordering to compute P(x), but it cannot work well for computing P(x|e). So the rest of this chapter seems to focus on P(x|e).
+
+###12.1.1 Sampling from a Bayesian Network
+
+**Algorithm 12.1** Forward Sampling in a Bayesian network
+
+```
+Let X_1, ..., X_2 be a topological ordering of X
+
+for i = 1, ..., n
+  u_i <- x(Pa_{X_i})
+  Sample x_i from P(X_i | u_i)
+
+return (x_1, ..., x_n)
+
+```
+
+**Box 12.A** Skill: Sampling from a Discrete Distribution.
+  It is simple.
+
 ###12.1.2 Analysis of Error
+
+a basic question about sampling is how many particles required to guarantee the performance.
+
+So there is a theorem named Hoeffding bound which shows the relationship.
 
 ###12.1.3 Conditional Probability Queries
 
@@ -66,9 +90,42 @@ The simplest approach to the generation of particles. Finding a topological orde
 
 ##12.2 Likelihood Weighting and Importance Sampling
 
+This sampling deals with conditional probability queries. It gives us a more effective way than the rejection sampling. The basic idea is that we still use forward sampling, but weight every particle, and use them to calculate P(x|e).
+
 ###12.2.1 Likelihood Weighting: Intuition
 
-##12.3 Markov Chain Monte Carlo Mothods
+**Algorithm 12.2** Likelihood-weighted particle generation
+
+```
+Z is observed.
+
+Let X_1, ..., X_2 be a topological ordering of X
+
+w <- 1
+
+for i = 1, ..., n
+  u_i <- x(Pa_{X_i})
+  if x_i is not in Z then
+    Sample x_i from P(X_i | u_i)
+  else
+    x_i <- z(X_i)
+    w <- w * P(x_i | u_i)
+
+return (x_1, ..., x_n), w
+
+```
+
+$latex P(y|e) = \frac{\sum w[m]*I{y[m]=y}}{\sum w[m]}$
+
+###12.2.2 Importance Sampling
+
+Likelihood-weighted is a special case of a very general approach called importance sampling.
+
+###12.2.3 Importance Sampling for Bayesian Networks
+
+
+
+##12.3 Markov Chain Monte Carlo Methods
 
 ###12.3.1 Gibbs Sampling Algorithm
 
