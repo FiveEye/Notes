@@ -24,17 +24,15 @@
 
 ###10.3.3 Answering Queries
 
-**Incremental Updates** : 被观察到的变量不断增多,刷新概率. 比较暴力的方法就是每次redo the process from beginning.
+**Incremental Updates**: 被观察到的变量不断增多,刷新概率. 比较暴力的方法就是每次redo the process from beginning.
 
 这类查询很适合用Belief Update,技术角度讲,SP和BU保持的信息量一样的,而BU是更新单一变量的方法.
 
-**Queries Outside a Clique** : 查询的变量不在同一个clique里面.
+**Queries Outside a Clique**: 查询的变量不在同一个clique里面.
 
 找到一个含有所有查询变量的子树,然后做VE.因为已经求出了$\beta$和$\u$,所以不是对整颗树做VE,可以加速.
 
-**Multiple Queries** :
-
-这个算法也很简单,对每一对相邻的$C_i$和$C_j$预处理$P(C_i,C_j)$,每次求解可以dp.
+**Multiple Queries**: 这个算法也很简单,对每一对相邻的$C_i$和$C_j$预处理$P(C_i,C_j)$,每次求解可以dp.
 
 ##10.4 Constructing a Clique Tree
 
@@ -121,9 +119,38 @@ $latex P(y|e) = \frac{\sum w[m]*I{y[m]=y}}{\sum w[m]}$
 
 Likelihood-weighted is a special case of a very general approach called importance sampling.
 
+It is a very interesting analysis for sampling. Let $Q(x)$ is a different distribution, and the key point is that $Q(x)$ is easy to calculate, and the relationship $w(x) = \frac{P(X)}{Q(X)}$ between $P(x) and $Q(x)$ also is easy to calculate. Then we can use $Q(x)$ and $w(x)$ to represent $P(x)$.
+
+####12.2.2.1 Unnormalized Importance Sampling
+
+```
+$latex E_P[f] = \frac{1}{M} \sum f(x[m])$ we use sampling and this formula to estimate $E_P[f]$
+
+$latex E_{P(X)}[f(X)] = \sum P(x)f(x)$ this is what $E_P[f]$ exactly is.
+
+$latex E_{P(X)}[f(X)] = E_{Q(X)}[f(X)\frac{P(X)}{Q(X)}]$ the equality between P(X) and Q(X).
+
+$latex E_{Q(X)}[f(X)w(X)] = \frac{1}{M} \sum f(x[m])w(x[m])$
+```
+We also call this estimator the unweighted importance sampling.
+
+**Analysis**:
+
+####12.2.2.2 Normalized Importance Sampling
+
+If P(X) is known, we don't need to normalize it. But we often don't know P(X), but P'(X) which is a unormailized distribution, and P'(X) = ZP(X). For example, we know P(x, e) = P(e) * P(x | e). P(x | e) is what we want, but P(x, e) is easy to get. Let $w(x) = P'(x) / Q(x)$.
+
+```
+$latex E_{Q(X)}[w(X)] = Z$
+
+$latex E_{P(X)}[f(X)] = E_{P'(X)}[f(X)]     / Z$
+$latex                = E_{Q(X)}[f(X)w(X)]  / E_{Q(X)}[w(X)]$
+$latex                = \sum f(x[m])w(x[m]) / \sum w(x[m])$
+```
+
+**Analysis**:
+
 ###12.2.3 Importance Sampling for Bayesian Networks
-
-
 
 ##12.3 Markov Chain Monte Carlo Methods
 
