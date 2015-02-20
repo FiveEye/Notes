@@ -8,7 +8,7 @@
 
 ##Git
 
-[**Pro Git**](http://git-scm.com/book/zh/v1)
+[**Pro Git**](http://git-scm.com/book/en/v2)
 
 ##Lua
 [**Lua Documentation**](http://www.lua.org/docs.html)
