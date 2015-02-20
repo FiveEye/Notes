@@ -9,3 +9,12 @@
 ##Git
 
 [**Pro Git**](http://git-scm.com/book/zh/v1)
+
+##Lua
+[**Lua Documentation**](http://www.lua.org/docs.html)
+
+  * [**Lua 5.3 Reference Manual**](http://www.lua.org/manual/5.3/)
+
+  * [**The implementation of Lua 5.0**](http://www.lua.org/doc/jucs05.pdf)
+
+  * [**The evolution of Lua**](http://www.lua.org/doc/hopl.pdf)
