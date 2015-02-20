@@ -138,7 +138,7 @@ We also call this estimator the unweighted importance sampling.
 
 ####12.2.2.2 Normalized Importance Sampling
 
-If P(X) is known, we don't need to normalize it. But we often don't know P(X), but P'(X) which is a unormailized distribution, and P'(X) = ZP(X). For example, we know P(x, e) = P(e) * P(x | e). P(x | e) is what we want, but P(x, e) is easy to get. Let $w(x) = P'(x) / Q(x)$.
+If P(X) is known, we don't need to normalize it. Unfortunately, we often don't know P(X), but P'(X) which is a unnormailized distribution, and P'(X) = ZP(X). For example, we know P(x, e) = P(e) * P(x | e). We want to get P(x | e), but P(x, e) is easy to get. Let $w(x) = P'(x) / Q(x)$.
 
 ```
 $latex E_{Q(X)}[w(X)] = Z$
@@ -152,9 +152,36 @@ $latex                = \sum f(x[m])w(x[m]) / \sum w(x[m])$
 
 ###12.2.3 Importance Sampling for Bayesian Networks
 
+This part focuses on how many particles should be sampled, when we use weighted importance sampling.
+
+####12.2.3.3 Ratio Likelihood Weighting
+
+we use P(x, e) / P(e) to compute P(x | e), then it is ratio likelihood weighting...
+
+####12.2.3.4 Normalized Likelihood Weighting
+
+The quality of the importance sampling estimator depends largely on how close the proposal distribution Q is to the target distribution P.
+
+If all of the evidences is at the roots, LW will work well.
+
+If all of the evidences is at the leaf, and the posterior distribution P(X) is very different than the prior distribution Q(X), then LW cannot work.
+
+####12.2.3.5 Conditional Probabilities: Comparison
+
+The ratio LW has two advantages. The first one is having lower variance, and leading to more robust estimates. The second one is that it is much easier to analyze.
+
+A significant disadvantage of ratio LW is the fact that each query y requires that we generate a new set of samples for the event y,e.
+
 ##12.3 Markov Chain Monte Carlo Methods
 
+The idea is that the first sample may be generated from the prior, successive samples are generated from distributions that provably get closer and closer to the posterior distribution. So this approach can come over the limitation of likelihood weighting.
+
 ###12.3.1 Gibbs Sampling Algorithm
+
+**Algorithm 12.4** Generating a Gibbs chain trajectoryu
+```
+
+```
 
 ###12.3.2 Markov Chains
 
