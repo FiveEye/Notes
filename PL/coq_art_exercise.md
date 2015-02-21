@@ -1,10 +1,10 @@
 #My solution for coq'art
 
 ##Index
-* [Chapter 3](#chapter%203)
-* [Chapter 4](#chapter%204)
-* [Chapter 5](#chapter%205)
-* [Chapter 6](#chapter%206)
+* [Chapter 3](#chapter-3)
+* [Chapter 4](#chapter-4)
+* [Chapter 5](#chapter-5)
+* [Chapter 6](#chapter-6)
 
 ##Chapter 3
 <pre>
