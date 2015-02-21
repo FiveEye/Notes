@@ -2,9 +2,13 @@
 
 ##Coq
 
+[**Reference Manual**](https://coq.inria.fr/distrib/current/refman/)
+
 [**Software Foundations**](http://www.cis.upenn.edu/~bcpierce/sf/current/index.html)
 
 [**Certified Programming with Dependent Types**](http://adam.chlipala.net/cpdt/)
+
+
 
 ##Git
 

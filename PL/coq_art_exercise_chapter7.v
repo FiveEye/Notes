@@ -31,7 +31,7 @@ trivial.
 Qed.
 
 Theorem not_divides_plus : forall n m:nat, ~ divides n m -> ~ divides n (n+m).
-Proof.
+Proof. 
 intros n m H; red; intro H'; elim H'; intro y.
 case y; simpl.
 intro H2; apply H.
@@ -76,12 +76,9 @@ Proof.
 intros; omega.
 Qed.
 
-Theorem lt_lt_or_eq : forall n m:nat, n < S m ->  n<m \/  n=m.
+Theorem lt_lt_or_eq : forall n m:nat, n < S m ->  n<m \/ n=m.
 Proof.
 intros; omega.
 Qed.
-
-
-
 
 End section_for_chapter_7.
