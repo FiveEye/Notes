@@ -8,11 +8,17 @@
 
 [**Certified Programming with Dependent Types**](http://adam.chlipala.net/cpdt/)
 
-
-
 ##Git
 
 [**Pro Git**](http://git-scm.com/book/en/v2)
+
+##Haskell
+
+[**Learn You a Haskell**](http://learnyouahaskell.com/chapters)
+
+##Idris
+
+[**Idris Documentation**](http://www.idris-lang.org/documentation/)
 
 ##Lua
 [**Lua Documentation**](http://www.lua.org/docs.html)
