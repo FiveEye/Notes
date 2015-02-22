@@ -46,3 +46,13 @@ Proof.
   simpl. rewrite rev_app. rewrite IHl. reflexivity.
 Qed.
 </pre>
+
+##Tactics
+
+case elim induction
+
+omege
+
+ring
+
+intuition
