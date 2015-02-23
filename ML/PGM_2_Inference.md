@@ -16,9 +16,9 @@
 
 这个挺有意思的,本质还是Sum Product.不过是用的不同的观点来看这件事情.
 
-我们注意到一个节点i到j传递的信息$latex \alpha_{i->j} = \beta_i / \alpha_{j->i}$.
+我们注意到一个节点i到j传递的信息$\alpha_{i->j} = \beta_i / \alpha_{j->i}$.
 
-所以我们初始化所有的$latex \alpha_{i->j}$都为1,然后随意更新,直到全部稳定.每条边记录当前的消息$latex u_{i->j}$,更新$latex \beta_j *= \alpha_{i->j} / u_{i->j}$.
+所以我们初始化所有的$\alpha_{i->j}$都为1,然后随意更新,直到全部稳定.每条边记录当前的消息$u_{i->j}$,更新$\beta_j *= \alpha_{i->j} / u_{i->j}$.
 
 如果我们按照Sum Product的顺序来来更新,肯定是最高效的,所以这只是另一个角度看待Message Passing,并没有提供更好的做法.
 
@@ -30,7 +30,7 @@
 
 **Queries Outside a Clique**: 查询的变量不在同一个clique里面.
 
-找到一个含有所有查询变量的子树,然后做VE.因为已经求出了$\beta$和$\u$,所以不是对整颗树做VE,可以加速.
+找到一个含有所有查询变量的子树,然后做VE.因为已经求出了$\beta$和$u$,所以不是对整颗树做VE,可以加速.
 
 **Multiple Queries**: 这个算法也很简单,对每一对相邻的$C_i$和$C_j$预处理$P(C_i,C_j)$,每次求解可以dp.
 
@@ -84,7 +84,7 @@ So there is a theorem named Hoeffding bound which shows the relationship.
 
 ###12.1.3 Conditional Probability Queries
 
-**Rejection Sampling**: do forward sampling but throw out sample where $latex E \neq e$
+**Rejection Sampling**: do forward sampling but throw out sample where $E \neq e$
 
 ##12.2 Likelihood Weighting and Importance Sampling
 
@@ -113,24 +113,24 @@ return (x_1, ..., x_n), w
 
 ```
 
-$latex P(y|e) = \frac{\sum w[m]*I{y[m]=y}}{\sum w[m]}$
+$P(y|e) = \frac{\sum w[m]*I{y[m]=y}}{\sum w[m]}$
 
 ###12.2.2 Importance Sampling
 
 Likelihood-weighted is a special case of a very general approach called importance sampling.
 
-It is a very interesting analysis for sampling. Let $Q(x)$ is a different distribution, and the key point is that $Q(x)$ is easy to calculate, and the relationship $w(x) = \frac{P(X)}{Q(X)}$ between $P(x) and $Q(x)$ also is easy to calculate. Then we can use $Q(x)$ and $w(x)$ to represent $P(x)$.
+It is a very interesting analysis for sampling. Let $Q(x)$ is a different distribution, and the key point is that $Q(x)$ is easy to calculate, and the relationship $w(x) = \frac{P(X)}{Q(X)}$ between $P(x)$ and $Q(x)$ also is easy to calculate. Then we can use $Q(x)$ and $w(x)$ to represent $P(x)$.
 
 ####12.2.2.1 Unnormalized Importance Sampling
 
 ```
-$latex E_P[f] = \frac{1}{M} \sum f(x[m])$ we use sampling and this formula to estimate $E_P[f]$
+$E_P[f] = \frac{1}{M} \sum f(x[m])$ we use sampling and this formula to estimate $E_P[f]$
 
-$latex E_{P(X)}[f(X)] = \sum P(x)f(x)$ this is what $E_P[f]$ exactly is.
+$E_{P(X)}[f(X)] = \sum P(x)f(x)$ this is what $E_P[f]$ exactly is.
 
-$latex E_{P(X)}[f(X)] = E_{Q(X)}[f(X)\frac{P(X)}{Q(X)}]$ the equality between P(X) and Q(X).
+$E_{P(X)}[f(X)] = E_{Q(X)}[f(X)\frac{P(X)}{Q(X)}]$ the equality between P(X) and Q(X).
 
-$latex E_{Q(X)}[f(X)w(X)] = \frac{1}{M} \sum f(x[m])w(x[m])$
+$E_{Q(X)}[f(X)w(X)] = \frac{1}{M} \sum f(x[m])w(x[m])$
 ```
 We also call this estimator the unweighted importance sampling.
 
@@ -141,11 +141,11 @@ We also call this estimator the unweighted importance sampling.
 If P(X) is known, we don't need to normalize it. Unfortunately, we often don't know P(X), but P'(X) which is a unnormailized distribution, and P'(X) = ZP(X). For example, we know P(x, e) = P(e) * P(x | e). We want to get P(x | e), but P(x, e) is easy to get. Let $w(x) = P'(x) / Q(x)$.
 
 ```
-$latex E_{Q(X)}[w(X)] = Z$
+$E_{Q(X)}[w(X)] = Z$
 
-$latex E_{P(X)}[f(X)] = E_{P'(X)}[f(X)]     / Z$
-$latex                = E_{Q(X)}[f(X)w(X)]  / E_{Q(X)}[w(X)]$
-$latex                = \sum f(x[m])w(x[m]) / \sum w(x[m])$
+$E_{P(X)}[f(X)] = E_{P'(X)}[f(X)]     / Z$
+$               = E_{Q(X)}[f(X)w(X)]  / E_{Q(X)}[w(X)]$
+$               = \sum f(x[m])w(x[m]) / \sum w(x[m])$
 ```
 
 **Analysis**:

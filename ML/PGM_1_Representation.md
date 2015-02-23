@@ -10,7 +10,7 @@
 
 #Chapter 2: Foundations
 
-**Chebyshev inequality**: $latex P(|X - E_p[X]| \ge t) \le \frac{Var_P[X]}{t^2}$
+**Chebyshev inequality**: $P(|X - E_p[X]| \ge t) \le \frac{Var_P[X]}{t^2}$
 
 #Chapter 3: The Bayesian Network Representation
 
@@ -76,7 +76,7 @@ minimal I-map的质量取决于节点遍历的顺序,所以还需要改进.
 
 ###Perfect Maps
 
-但是并非所有的distribution都有perfect map,比如1, x xor y xor z. 2. ABCD组成的无向图. $latex A \perp C | \{B, D\}, B \perp D | \{A, C\}$.
+但是并非所有的distribution都有perfect map,比如1, x xor y xor z. 2. ABCD组成的无向图. $A \perp C | \{B, D\}, B \perp D | \{A, C\}$.
 
 ###3.4.3 Finding Perfect Maps
 
@@ -110,17 +110,17 @@ Markov network
 
 ##4.1 The Misconception Example
 
-$latex P \models (X \perp Y | Z)$ if and only if we can write P in the form $latex P(\chi) = \phi_1(X,Z) \cdot \phi_2(Y,Z)$.
+$P \models (X \perp Y | Z)$ if and only if we can write P in the form $P(\chi) = \phi_1(X,Z) \cdot \phi_2(Y,Z)$.
 
-$latex P(a, b, c, d) = \frac{1}{Z} \phi_1(a,b) \cdot \phi_2(b,c) \cdot \phi_3(c,d) \cdot \phi_4(d,a)$.
+$P(a, b, c, d) = \frac{1}{Z} \phi_1(a,b) \cdot \phi_2(b,c) \cdot \phi_3(c,d) \cdot \phi_4(d,a)$.
 
-$latex Z = \sum_{a,b,c,d}P(a, b, c, d)$.
+$Z = \sum_{a,b,c,d}P(a, b, c, d)$.
 
 ##4.2 Parameterization
 
 ###4.2.1 Factors
 
-$latex \psi(X,Y,Z) = \phi_1(X,Y) \cdot \phi_2(Y,Z)$.
+$\psi(X,Y,Z) = \phi_1(X,Y) \cdot \phi_2(Y,Z)$.
 
 ###4.2.2 Gibbs Distributions and Markov Networks
 
@@ -158,9 +158,9 @@ P是一个正分布,H是MN over X,如果H是P的I-Map,那么P是H上的Gibbs分�
 
 MN上的独立性比BN上简单,因为MN上没有v-structure.所以随便就能YY出来了.
 
-  * pairwise independencies: 两个没有相连的节点在给定其他节点值得情况下独立$latex X \perp Y | \chi - \{X,Y\}$.
+  * pairwise independencies: 两个没有相连的节点在给定其他节点值得情况下独立$X \perp Y | \chi - \{X,Y\}$.
 
-  * local independencies: 一个节点所有的邻居被观察到,则他和其余点独立$latex X \perp \chi - \{X\} -MB_H(X) | MB_H(X)$.
+  * local independencies: 一个节点所有的邻居被观察到,则他和其余点独立$X \perp \chi - \{X\} -MB_H(X) | MB_H(X)$.
 
 ###4.3.3 From Distributions to Graphs
 
