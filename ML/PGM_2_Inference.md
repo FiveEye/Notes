@@ -113,7 +113,7 @@ return (x_1, ..., x_n), w
 
 ```
 
-$P(y|e) = \frac{\sum w[m]*I{y[m]=y}}{\sum w[m]}$
+$P(y|e) = \frac{\sum w[m]*I\{y[m]=y\}}{\sum w[m]}$
 
 ###12.2.2 Importance Sampling
 
@@ -178,11 +178,58 @@ The idea is that the first sample may be generated from the prior, successive sa
 
 ###12.3.1 Gibbs Sampling Algorithm
 
-**Algorithm 12.4** Generating a Gibbs chain trajectoryu
+**Algorithm 12.4** Generating a Gibbs chain trajectory
 ```
-
+Procedure Gibbs-Sample (
+  X, // Set of variables to be sampled
+  \Phi, // Set of factors defining P_\Phi
+  P^0(X), // Initial state distribution
+  T // Number of time steps
+)
+  Sample x^0 from P^0(X)
+  for t = 1, ..., T
+    Sample x^t_i from P_\Phi(X_i | x_{-i})
+    //Change X_i in x^t
+  return x^0, ..., x^T
 ```
+We formalize this intuitive argument using a framework called Markov chain Monte Carlo (MCMC).
 
 ###12.3.2 Markov Chains
+At a high level, a Markov chain is defined in terms of a graph of states over which the sampling algorithm takes a random walk.
+
+**Algorithm 12.5** Generating a Markov chain trajectory
+```
+Procedure Gibbs-Sample (
+  P^0(X), // Initial state distribution
+  \tau, // Markov chain transition model
+  T // Number of time steps
+)
+  Sample x^0 from P^0(X)
+  for t = 1, ..., T
+    Sample x^t from \tau(X^{t - 1} \to X)
+  return x^0, ..., x^T
+```
+
+Intuitively, as the process converges, we would expect P^{t+1} to be close to P^t.
+
+$P^t(x') = P^{t+1}(x') = \sum_{x \in Val(X)} P^t(x) \tau(x \to x')$
+
+A stationary distribution \pi(X) is also called an invariant distribution.
+
+In general, there is no guarantee that our MCMC sampling process converges to a stationary distribution.
+
+If a finite state Markov chain \tau is regular, then it has a unique stationary distribution.
+
+####12.3.2.4 Multiple Transition Models
+
+It is a interesting analysis for a factorized structure. So if we have two independent variable X and Y, then our state space is 2D. But we can factorize it to two kernel X and Y, one graphical model is for X, and the other one is for Y.
 
 ###12.3.3 Gibbs Sampling Revisited
+
+Gibbs sampling is easy to implement in the many graphical models where we can compute the transition probability very efficiently. It can be done based only on the Markov blanket of X_i.
+
+###12.3.4 A Broader Class of Markov Chains
+
+###12.3.5 Using a Markov Chain
+
+#Chapter 13 MAP Inference
