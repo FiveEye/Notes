@@ -26,4 +26,4 @@
   * [**The evolution of Lua**](http://www.lua.org/doc/hopl.pdf)
 
 ##Others
-[The Implementation of Functional Programming Languages](http://research.microsoft.com/en-us/um/people/simonpj/papers/slpj-book-1987/)
+[**The Implementation of Functional Programming Languages**](http://research.microsoft.com/en-us/um/people/simonpj/papers/slpj-book-1987/)

@@ -230,6 +230,19 @@ Gibbs sampling is easy to implement in the many graphical models where we can co
 
 ###12.3.4 A Broader Class of Markov Chains
 
+The Gibbs sampling uses only very local moves over the state space: moves that change one variable at a time. The high-probability states will form strong basins of attraction, and the chain will be very unlikely to move away from such a state. In this case, we often want to consider chains that allow a broader rang
+e of moves, including much larger steps in the space. The framework we develop in this section allows us to construct a broad family of chains in a way that guarantees the desired stationary distribution.
+
+####12.3.4.1 Detailed Balance
+
+$\pi(x)\tau(x \to x') = \pi(x')\tau(x' \to x)$
+
+####12.3.4.2 Metropolis-Hastings Algorithm
+
+The high level idea is similar with the importance sampling.
+
 ###12.3.5 Using a Markov Chain
+
+
 
 #Chapter 13 MAP Inference
