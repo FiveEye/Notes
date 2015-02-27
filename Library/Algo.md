@@ -7,4 +7,4 @@
 
 
 ##Alogrithm Problems
-http://main.edu.pl/en/archive/oi/13/tet
+[Tetris 3D](http://main.edu.pl/en/archive/oi/13/tet)
