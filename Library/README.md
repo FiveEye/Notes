@@ -14,6 +14,7 @@
 ##Haskell
 
 [**Learn You a Haskell**](http://learnyouahaskell.com/chapters)
+[**Real World Haskell**](http://book.realworldhaskell.org/)
 
 ##Idris
 
@@ -22,8 +23,8 @@
 ##Lua
 [**Documentation for Lua**](http://www.lua.org/docs.html)
   * [**Lua 5.3 Reference Manual**](http://www.lua.org/manual/5.3/)
-  * [**The implementation of Lua 5.0**](http://www.lua.org/doc/jucs05.pdf)
-  * [**The evolution of Lua**](http://www.lua.org/doc/hopl.pdf)
+  * [**The Implementation of Lua 5.0**](http://www.lua.org/doc/jucs05.pdf)
+  * [**The Evolution of Lua**](http://www.lua.org/doc/hopl.pdf)
 
 ##Others
 [**The Implementation of Functional Programming Languages**](http://research.microsoft.com/en-us/um/people/simonpj/papers/slpj-book-1987/)
