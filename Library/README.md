@@ -20,11 +20,18 @@
 
 [**Documentation for Idris**](http://www.idris-lang.org/documentation/)
 
+
+##Lisp
+
+[**On Lisp**](http://dunsmor.com/lisp/onlisp/onlisp.html)
+
 ##Lua
+
 [**Documentation for Lua**](http://www.lua.org/docs.html)
   * [**Lua 5.3 Reference Manual**](http://www.lua.org/manual/5.3/)
   * [**The Implementation of Lua 5.0**](http://www.lua.org/doc/jucs05.pdf)
   * [**The Evolution of Lua**](http://www.lua.org/doc/hopl.pdf)
 
 ##Others
+
 [**The Implementation of Functional Programming Languages**](http://research.microsoft.com/en-us/um/people/simonpj/papers/slpj-book-1987/)
