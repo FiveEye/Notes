@@ -2,7 +2,7 @@
 
 [the link to my blog](http://www.freopen.com/?p=10846)
 
-[Inference](PGM_1_Representation.md)
+[Inference](PGM_2_Inference.md)
 
 开个坑...去年因某种不可抗力...追了一半就被迫停止了...现在捡一下...但愿还能捡的起来... lol
 
