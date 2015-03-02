@@ -1,4 +1,4 @@
-#Probailistic Graphical Models
+#Probabilistic Graphical Models
 
 #Chapter 9 Exact Inference: Variable Elimination
 

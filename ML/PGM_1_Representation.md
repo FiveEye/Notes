@@ -1,4 +1,4 @@
-#Probailistic Graphical Models
+#Probabilistic Graphical Models
 
 [the link to my blog](http://www.freopen.com/?p=10846)
 
