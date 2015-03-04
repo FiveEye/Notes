@@ -31,6 +31,7 @@
   * [**Lua 5.3 Reference Manual**](http://www.lua.org/manual/5.3/)
   * [**The Implementation of Lua 5.0**](http://www.lua.org/doc/jucs05.pdf)
   * [**The Evolution of Lua**](http://www.lua.org/doc/hopl.pdf)
+  * [**Source Code**](http://www.lua.org/source/5.3/)
 
 ##Others
 
