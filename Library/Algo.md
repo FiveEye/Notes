@@ -9,7 +9,6 @@
 
 
 ##EMST
-
 [Fast Euclidean Minimum Spanning Tree](http://videolectures.net/kdd2010_march_fem/): Cover Tree
   * [PDF](http://www.cc.gatech.edu/~pram/pubs/rp494b-march.pdf)
 
@@ -18,6 +17,8 @@
 [A minimum spanning tree algorithm with inverse-Ackerman type complexity](http://www.ms.unimelb.edu.au/~woodd/NetOpt/Chazelle-MST-JACM.pdf): A fast algorithm for general MST that is based on the soft heap
 
 [Efficient minimum spanning tree construction without Delaunay triangulation](http://www.ece.northwestern.edu/~haizhou/publications/zhou02ipl.pdf): an O(n \log{n}) sweep-line algorithm
+
+[The well-separated pair decomposition and its applications](http://people.scs.carleton.ca/~michiel/aa-handbook.pdf)
 
 ##Delaunay Triangulations
 [Delaunay Triangulations](http://www.ti.inf.ethz.ch/ew/courses/CG13/lecture/Chapter%206.pdf)
