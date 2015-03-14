@@ -2,6 +2,8 @@
 
 #Chapter 16 Learning Graphical Models: Overview
 
+##16.1 Motivation
+
 
 
 #Chapter 17 Parameter Estimation

@@ -23,7 +23,10 @@
 ##Delaunay Triangulations
 [Delaunay Triangulations](http://www.ti.inf.ethz.ch/ew/courses/CG13/lecture/Chapter%206.pdf)
 
-[Slide](file:///D:/Downloads/slides9alt.pdf)
+[Slide](http://www.cs.uu.nl/docs/vakken/ga/slides9alt.pdf)
+
+##Well-Separated Pair Decomposition
+[Well-Separated Pair Decomposition and Its Applications](http://people.scs.carleton.ca/~michiel/aa-handbook.pdf): A very clear article to introduce the WSPD.
 
 
 ##Alogrithm Problems
