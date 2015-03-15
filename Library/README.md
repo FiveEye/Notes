@@ -20,7 +20,6 @@
 
 [**Documentation for Idris**](http://www.idris-lang.org/documentation/)
 
-
 ##Lisp
 
 [**On Lisp**](http://dunsmor.com/lisp/onlisp/onlisp.html)
@@ -32,6 +31,12 @@
   * [**The Implementation of Lua 5.0**](http://www.lua.org/doc/jucs05.pdf)
   * [**The Evolution of Lua**](http://www.lua.org/doc/hopl.pdf)
   * [**Source Code**](http://www.lua.org/source/5.3/)
+
+##Matlab
+
+[**Documentation**](http://www.mathworks.com/help/matlab/index.html)
+
+[**Quick Reference**](http://www.cs.cmu.edu/~tom/10601_fall2012/recitations/matlab_quickref.pdf)
 
 ##Others
 
