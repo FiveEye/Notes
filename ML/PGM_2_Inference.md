@@ -1,8 +1,8 @@
 #Probabilistic Graphical Models
 
-#Chapter 9 Exact Inference: Variable Elimination
+#9 Exact Inference: Variable Elimination
 
-#Chapter 10 Exact Inference: Clique Trees
+#10 Exact Inference: Clique Trees
 
 ##10.1 Variable Elimination and Clique Trees
 
@@ -44,11 +44,11 @@
   * chordal graphs: node-elimination techniques in section 9.4.3.2
   * find cliques: maximum cardinality search.
 
-#Chapter 11: Inference as Optimization*
+#11: Inference as Optimization*
 
 和第十章连在一起的一章,有必要读一下.
 
-#Chapter 12: Particle-Based Approximate Inference
+#12: Particle-Based Approximate Inference
 
 Particle-based methods can be roughly characterized along two axes. On one axis, approaches vary on the process by which particles are generated. On the other axis, techniques use different notions of particle.
 
@@ -245,4 +245,4 @@ The high level idea is similar with the importance sampling.
 
 
 
-#Chapter 13 MAP Inference
+#13 MAP Inference

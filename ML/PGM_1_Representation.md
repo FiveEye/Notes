@@ -6,13 +6,13 @@
 
 前两章是预备知识
 
-#Chapter 1 Introduction
+#1 Introduction
 
-#Chapter 2 Foundations
+#2 Foundations
 
 **Chebyshev inequality**: $$P(|X - E_p[X]| \ge t) \le \frac{Var_P[X]}{t^2}$$
 
-#Chapter 3 The Bayesian Network Representation
+#3 The Bayesian Network Representation
 
 **Box 3.A** Concept: The Naive Bayes Model
 
@@ -104,7 +104,7 @@ P-Map可能存在也可能存在多个.
 
 如果还有无向边,就找符合这三条规则的边,然后标记方向.
 
-#Chapter 4 Undirected Graphical Models
+#4 Undirected Graphical Models
 
 Markov network
 
