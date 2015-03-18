@@ -3,6 +3,7 @@
   * [Representation](ML/PGM_1_Representation.md)
   * [Inference](ML/PGM_2_Inference.md)
   * [Learning](ML/PGM_3_Learning.md)
+  * [Background](ML/PGM_A_Background.md)
 * Coq'Art
   * [reading notes](PL/coq_art_note.md)
   * [solutions for Coq'Art](PL/coq_art_exercise.md)

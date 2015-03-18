@@ -24,6 +24,10 @@
 
 [**On Lisp**](http://dunsmor.com/lisp/onlisp/onlisp.html)
 
+##LLVM
+
+[**LLVM Tutorial**](http://llvm.org/docs/tutorial/index.html)
+
 ##Lua
 
 [**Documentation for Lua**](http://www.lua.org/docs.html)
