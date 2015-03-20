@@ -14,6 +14,7 @@
 ##Haskell
 
 [**Learn You a Haskell**](http://learnyouahaskell.com/chapters)
+
 [**Real World Haskell**](http://book.realworldhaskell.org/)
 
 ##Idris

@@ -2,11 +2,10 @@
 
 [Advanced Data Structures](http://courses.csail.mit.edu/6.897/spring05/lec.html)
 
-##Planar Graph
-[any planar graph is 6-colorable](https://courses.engr.illinois.edu/cs173/fa2010/lectures/planargraphs.pdf)
+##Delaunay Triangulations
+[Delaunay Triangulations](http://www.ti.inf.ethz.ch/ew/courses/CG13/lecture/Chapter%206.pdf)
 
-[Planarity Testing of Graphs](http://www.tcs.tifr.res.in/~workshop/nitp_igga/slides/shreesh-planarity-patna.pdf)
-
+[Slide](http://www.cs.uu.nl/docs/vakken/ga/slides9alt.pdf)
 
 ##EMST
 [Fast Euclidean Minimum Spanning Tree](http://videolectures.net/kdd2010_march_fem/): Cover Tree
@@ -20,10 +19,15 @@
 
 [The well-separated pair decomposition and its applications](http://people.scs.carleton.ca/~michiel/aa-handbook.pdf)
 
-##Delaunay Triangulations
-[Delaunay Triangulations](http://www.ti.inf.ethz.ch/ew/courses/CG13/lecture/Chapter%206.pdf)
+##Metric Embeddings
+[Lecture notes on metric embeddings](http://kam.mff.cuni.cz/~matousek/ba-a4.pdf)
 
-[Slide](http://www.cs.uu.nl/docs/vakken/ga/slides9alt.pdf)
+
+##Planar Graph
+[any planar graph is 6-colorable](https://courses.engr.illinois.edu/cs173/fa2010/lectures/planargraphs.pdf)
+
+[Planarity Testing of Graphs](http://www.tcs.tifr.res.in/~workshop/nitp_igga/slides/shreesh-planarity-patna.pdf)
+
 
 ##Well-Separated Pair Decomposition
 [Well-Separated Pair Decomposition and Its Applications](http://people.scs.carleton.ca/~michiel/aa-handbook.pdf): A very clear article to introduce the WSPD.

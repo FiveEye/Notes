@@ -5,3 +5,11 @@
 Folding Domain-Specific Languages: Deep and Shallow Embeddings
 
 Abstracting Abstract Machines
+
+[Martin-L¨of’s Type Theory](http://www.cse.chalmers.se/~bengt/papers/hlcs.pdf)
+
+[Dynamic Languages Symposium](http://www.dynamic-languages-symposium.org/)
+
+[OOPSLA](http://en.wikipedia.org/wiki/OOPSLA)
+
+[Finger tree](http://en.wikipedia.org/wiki/Finger_tree)
