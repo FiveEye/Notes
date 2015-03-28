@@ -541,11 +541,110 @@ Qed.
 
 (* 6.30 p158 *)
 
+Fixpoint f1 (bt:Z_btree) : Z_fbtree :=
+  match bt with
+  | Z_leaf => Z_fleaf
+  | Z_bnode v t1 t2 => Z_fnode v (fun b => if b then (f1 t1) else (f1 t2))
+  end.
+
+Fixpoint f2 (ft:Z_fbtree) : Z_btree :=
+  match ft with
+  | Z_fleaf => Z_leaf
+  | Z_fnode v f => Z_bnode v (f2 (f true)) (f2 (f false))
+  end.
+
+Theorem f2_f1 : forall t: Z_btree, f2 (f1 t) = t.
+Proof.
+intros.
+elim t.
+simpl.
+trivial.
+intros.
+simpl.
+rewrite H.
+rewrite H0.
+trivial.
+Qed.
+
+Require Import Logic.FunctionalExtensionality.
+
+Theorem f1_f2 : forall t: Z_fbtree, f1 (f2 t) = t.
+Proof.
+intros.
+induction t.
+simpl; trivial.
+simpl. rewrite H. rewrite H.
+rewrite <- (functional_extensionality (fun b:bool => if b then z0 true else z0 false) z0).
+trivial.
+intros. elim x; trivial.
+Qed.
+
 (* 6.31 p158 *)
+
+Fixpoint mult2 (n:nat) : nat :=
+  match n with
+  | O => O
+  | (S p) => (S (S (mult2 p)))
+  end.
+
+Lemma mult2_double : forall n:nat, mult2 n = n + n.
+Proof.
+intros.
+elim n0.
+simpl. trivial.
+intros.
+simpl. rewrite H. rewrite plus_n_Sm. trivial.
+Qed.
 
 (* 6.32 p158 *)
 
+Fixpoint sum_n (n:nat) : nat :=
+  match n with
+  | O => O
+  | S p => S p + sum_n p
+  end.
+
+Require Import ArithRing.
+
+Theorem sum_closed_form : forall n:nat, 2 * sum_n n = n * S n.
+Proof.
+intro n.
+induction n.
+simpl. trivial.
+simpl (sum_n (S n0)).
+ring_simplify.
+rewrite IHn.
+ring_simplify.
+trivial.
+Qed.
+
 (* 6.33 p159 *)
+
+Require Import Omega.
+
+Theorem sum_n_le_n : forall n:nat, n <= sum_n n.
+Proof.
+intro n.
+assert ((2 * n) <= (2 * sum_n n)).
+rewrite sum_closed_form.
+ring_simplify.
+induction n.
+simpl; omega.
+ring_simplify. omega.
+omega.
+Qed.
+
+Print sum_n_le_n.
+
+Theorem sum_n_le_n' : forall n:nat, n <= sum_n n.
+Proof.
+ simple induction n0.
+ auto with arith.
+ intros n1 Hn0. simpl.
+ auto with arith.
+Qed.
+
+Print sum_n_le_n'.
 
 (* 6.34 p161 *)
 
