@@ -456,18 +456,131 @@ Fixpoint discrete_log (n:positive) : nat :=
 
 Eval compute in discrete_log (xI (xI (xI (xI xH)))).
 
+(* 6.27 p156 *)
+
+Inductive Z_fbtree : Set :=
+  | Z_fleaf : Z_fbtree
+  | Z_fnode : Z -> (bool -> Z_fbtree) -> Z_fbtree.
+
+Definition right_son (t:Z_btree) : Z_btree :=
+  match t with
+  | Z_leaf => Z_leaf
+  | Z_bnode a t1 t2 => t2
+  end.
+
+Definition fright_son (t:Z_fbtree) : Z_fbtree :=
+  match t with
+  | Z_fleaf => Z_fleaf
+  | Z_fnode a f => f false
+  end.
+
+Fixpoint fsum_all_values (t:Z_fbtree) : Z :=
+  (match t with
+  | Z_fleaf => 0
+  | Z_fnode v f =>
+    v + fsum_all_values (f true) + fsum_all_values (f false)
+  end)%Z.
+
+Check Z.eq_dec.
+
+Fixpoint fzero_present (t:Z_fbtree) : bool :=
+  match t with
+  | Z_fleaf => false
+  | Z_fnode v f => if (Z.eq_dec v 0%Z) then true else orb (fzero_present (f true)) (fzero_present (f false))
+  end.
+
+(* 6.28 p157 *)
+
+Inductive Z_inf_branch_tree : Set :=
+  | Z_inf_leaf : Z_inf_branch_tree
+  | Z_inf_node : Z -> (nat->Z_inf_branch_tree)->Z_inf_branch_tree.
 
 
+(*
+(* Error: Cannot guess decreasing argument of fix. *)
+Fixpoint izero_present (n:nat) (t:Z_inf_branch_tree) : bool :=
+  match (t, n) with
+  | (Z_inf_leaf, _) => false
+  | (Z_inf_node 0%Z f, _) => true
+  | (Z_inf_node _ f, 0%nat) => izero_present n (f 0%nat)
+  | (Z_inf_node _ f, (S m)) => orb (izero_present n (f m)) (izero_present m t)
+  end.
+*)
 
+Fixpoint any_true (n:nat) (f:nat->bool):bool :=
+  match n with 
+  | 0%nat => f 0%nat
+  | S m => orb (f (S m)) (any_true m f)
+  end.
 
+Fixpoint izero_present (n:nat) (t:Z_inf_branch_tree) : bool :=
+  match t with
+  | Z_inf_leaf => false
+  | Z_inf_node v f =>
+    match v with
+    | 0%Z => true
+    | _ => any_true n (fun x => izero_present n (f x))
+    end
+  end.
 
+(* 6.29 p158 *)
 
+Open Scope nat_scope.
 
+Theorem plus_n_O : forall (n:nat), n = n + 0.
+Proof.
+intro n.
+elim n.
+simpl.
+reflexivity.
+intros.
+simpl.
+elim H.
+reflexivity.
+Qed.
 
+(* 6.30 p158 *)
 
+(* 6.31 p158 *)
 
+(* 6.32 p158 *)
 
+(* 6.33 p159 *)
 
+(* 6.34 p161 *)
 
+(* 6.35 p161 *)
+
+(* 6.36 p161 *)
+
+(* 6.37 p161 *)
+
+(* 6.38 p162 *)
+
+(* 6.39 p163 *)
+
+(* 6.40 p163 *)
+
+(* 6.41 p163 *)
+
+(* 6.42 p163 *)
+
+(* 6.43 p163 *)
+
+(* 6.44 p164 *)
+
+(* 6.45 p164 *)
+
+(* 6.46 p167 *)
+
+(* 6.47 p167 *)
+
+(* 6.48 p167 *)
+
+(* 6.49 p167 *)
+
+(* 6.50 p167 *)
+
+(* 6.51 p169 *)
 
 End section_for_chapter_6.

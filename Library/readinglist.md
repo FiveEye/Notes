@@ -13,3 +13,5 @@ Abstracting Abstract Machines
 [OOPSLA](http://en.wikipedia.org/wiki/OOPSLA)
 
 [Finger tree](http://en.wikipedia.org/wiki/Finger_tree)
+
+[Cover tree](http://videolectures.net/solomon_langford_fenna/)
