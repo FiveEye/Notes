@@ -15,3 +15,5 @@ Abstracting Abstract Machines
 [Finger tree](http://en.wikipedia.org/wiki/Finger_tree)
 
 [Cover tree](http://videolectures.net/solomon_langford_fenna/)
+
+[Type Theory](http://www.cse.chalmers.se/~coquand/type.html)
