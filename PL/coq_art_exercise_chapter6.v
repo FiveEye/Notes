@@ -884,6 +884,8 @@ Fixpoint invert (A:Set)(n:nat)(t:htree A n) : htree A n :=
     hnode A p v (invert A p t2) (invert A p t1)
   end.
 
+(*copy from the answer*)
+
 Definition first_of_htree :
   forall (A:Set) (n:nat), htree A n -> htree A (S n) -> htree A n.
  intros A n v t.
@@ -912,10 +914,78 @@ Qed.
 
 (* 6.47 p167 *)
 
+Fixpoint make_htree (n:nat) : htree Z n :=
+  match n with
+  | O => hleaf Z 0%Z
+  | (S m) => hnode Z m 0%Z (make_htree m) (make_htree m)
+  end.
+
 (* 6.48 p167 *)
 
-(* 6.49 p167 *)
+Inductive binary_word : nat -> Set :=
+  | empty_binary_word :  binary_word 0
+  | cons_binary_word :
+    forall p:nat, bool -> binary_word p -> binary_word (S p).
 
+Fixpoint binary_word_concat (n:nat)(w1:binary_word n)(m:nat)(w2:binary_word m) : binary_word (n+m) :=
+  match w1 with
+  | empty_binary_word => w2
+  | cons_binary_word q b w1' =>
+    cons_binary_word (q+m) b (binary_word_concat q w1' m w2)
+ end.
+
+(* 6.49 p167 *)
+Fixpoint binary_word_or (l : nat) (wl wr : binary_word l) : binary_word l.
+  destruct wl.
+  exact wr.
+  inversion wr.
+  exact(cons_binary_word p (orb b H0) (binary_word_or p wl H1)).
+Defined.
+
+Definition bw1:= cons_binary_word 1 false (cons_binary_word 0 true empty_binary_word).
+Definition bw2:= cons_binary_word 1 true (cons_binary_word 0 false empty_binary_word).
+
+Eval compute in binary_word_or 2 bw1 bw2.
+
+Print binary_word_or.
+
+Eval compute in eq_rec 2 binary_word bw1 2 eq_refl.
+
+Fixpoint binary_word_or1 (l : nat) (wl wr : binary_word l) : binary_word l.
+  refine(
+    match wl in binary_word n return binary_word n -> binary_word n with
+    | empty_binary_word => (fun x => x)
+    | cons_binary_word ll lb lw => 
+        (fun wr' : binary_word (S ll) => match wr' with
+        | empty_binary_word => (fun p : False => wr')
+        | cons_binary_word rl rb rw => 
+            (fun p : ll = rl => 
+              cons_binary_word
+              rl
+              (bool_or lb rb) 
+              (binary_word_or rl (eq_rec ll binary_word lw rl p) rw))
+        end _)
+    end wr).
+    reflexivity.
+Defined.
+
+Print binary_word_or1.
+
+Fixpoint binary_word_or2 (n:nat)(w1 w2:binary_word n) : binary_word n.
+  refine(
+  match w1 in binary_word p return binary_word p -> binary_word p with
+  | empty_binary_word => (fun x => x)
+  | cons_binary_word q1 b1 w1' => (fun w3 =>
+    match w3 with 
+    | empty_binary_word => w3
+    | cons_binary_word q2 b2 w2' => (fun P:q1=q2 =>
+      cons_binary_word q2 (orb b1 b2) (binary_word_or q2 (eq_rec q1 binary_word w1' q2 P) w2'))
+    end eq_refl
+  )
+  end w2).
+Qed.
+
+Print binary_word_or2.
 (* 6.50 p167 *)
 
 (* 6.51 p169 *)
