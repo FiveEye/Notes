@@ -848,17 +848,67 @@ Fixpoint three_way_compare (a b:nat) : cmp :=
   | S n, S m => three_way_compare n m
   end.
 
-Fixpoint update_primes : nat -> (list nat*nat) -> (list nat*nat)*bool :=
-  
+Fixpoint update_primes (k:nat) (l:list (nat*nat)) : (list (nat*nat))*bool :=
+  match l with
+  | nil => (nil, false)
+  | (p,m)::l' => let (a, b) := update_primes k l' in
+    match three_way_compare k m with
+    | Less => ((p, m)::a, b)
+    | Equal => ((p, m+p)::a, true)
+    | Greater => ((p, m+p)::a, b)
+    end
+  end.
 
+Fixpoint prime_sieve (n:nat) : (list (nat*nat)) :=
+  match n with
+  | O => nil
+  | S O => nil
+  | S m => let (a, b) := update_primes (S m) (prime_sieve m) in
+    if b then a else (S m, 2 * (S m))::a
+  end.
 
-Fixpoint prime_sieve : nat -> (list nat*nat) :=
+Eval compute in prime_sieve 100.
 
-
-
-
+(* It is so hard to prove the soundness and completeness! *)
 
 (* 6.46 p167 *)
+
+Inductive htree (A:Set) : nat -> Set :=
+  | hleaf : A -> (htree A O)
+  | hnode : forall n:nat, A -> htree A n -> htree A n -> htree A (S n).
+
+Fixpoint invert (A:Set)(n:nat)(t:htree A n) : htree A n :=
+  match t with
+  | hleaf v => hleaf A v
+  | hnode p v t1 t2 =>
+    hnode A p v (invert A p t2) (invert A p t1)
+  end.
+
+Definition first_of_htree :
+  forall (A:Set) (n:nat), htree A n -> htree A (S n) -> htree A n.
+ intros A n v t.
+
+ generalize v.
+ change (htree A (pred (S n)) -> htree A (pred (S n))).
+ case t.
+ intros x v'; exact v'.
+ intros p x t1 t2 v'; exact t1.
+Defined.
+ 
+Print first_of_htree.
+
+Eval compute in (pred O).
+
+Theorem injection_first_htree :
+ forall (n:nat) (t1 t2 t3 t4:htree nat n),
+   hnode nat n 0 t1 t2 = hnode nat n 0 t3 t4 -> t1 = t3.
+ intros n t1 t2 t3 t4 h.
+ change
+  (first_of_htree nat n t1 (hnode nat n 0 t1 t2) =
+   first_of_htree nat n t1 (hnode nat n 0 t3 t4)).
+ rewrite h.
+ reflexivity.
+Qed.
 
 (* 6.47 p167 *)
 
