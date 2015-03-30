@@ -820,9 +820,43 @@ Qed.
 
 (* 6.44 p164 *)
 
+Fixpoint F_to_PQ (f:F) : nat * nat :=
+  match f with
+  | F_one => (1, 1)
+  | F_n g => let (p,q) := F_to_PQ g in (p+q,q)
+  | F_d g => let (p,q) := F_to_PQ g in (p,p+q)
+  end.
 
+Eval compute in F_to_PQ (F_one).
+
+Eval compute in F_to_PQ (F_n F_one).
+
+Eval compute in F_to_PQ (F_d (F_n F_one)).
 
 (* 6.45 p164 *)
+
+Inductive cmp : Set := 
+  | Less : cmp
+  | Equal : cmp
+  | Greater : cmp.
+
+Fixpoint three_way_compare (a b:nat) : cmp :=
+  match a, b with
+  | O, O => Equal
+  | S _, O => Greater
+  | O, S _ => Less
+  | S n, S m => three_way_compare n m
+  end.
+
+Fixpoint update_primes : nat -> (list nat*nat) -> (list nat*nat)*bool :=
+  
+
+
+Fixpoint prime_sieve : nat -> (list nat*nat) :=
+
+
+
+
 
 (* 6.46 p167 *)
 
@@ -835,5 +869,17 @@ Qed.
 (* 6.50 p167 *)
 
 (* 6.51 p169 *)
+
+Check Empty_set.
+
+Theorem all_equal : forall x y : Empty_set, x = y.
+Proof.
+destruct x.
+Qed.
+
+Theorem all_diff : forall x y : Empty_set, x <> y.
+Proof.
+destruct x.
+Qed.
 
 End section_for_chapter_6.

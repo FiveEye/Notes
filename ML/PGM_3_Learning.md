@@ -30,7 +30,7 @@ It is exactly the information gain, so
 
 Then we want to maximize the second term, and it is called an expected log-likelihood.
 
-The log-likelihood : $$l(D:M) = \log{P(D:M)}.$$
+The log-likelihood : \(l(D:M) = \log{P(D:M)}.\)
 
 The probability that M ascribes to D is $$P(D:M) = \prod_{m=1}^M P(\xi[m]:M).$$ Taking the logarithm, we obtain $$\log{P(D:M)} = \sum_{m=1}^{M}\log{P(\xi[m]:M)},$$ which is precisely the negative of the empirical log-loss that appears inside the summation of equation (16.1).
 
