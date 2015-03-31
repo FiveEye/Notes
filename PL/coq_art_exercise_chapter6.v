@@ -951,6 +951,8 @@ Print binary_word_or.
 
 Eval compute in eq_rec 2 binary_word bw1 2 eq_refl.
 
+(* lolisa's solution *)
+
 Fixpoint binary_word_or1 (l : nat) (wl wr : binary_word l) : binary_word l.
   refine(
     match wl in binary_word n return binary_word n -> binary_word n with
@@ -986,7 +988,37 @@ Fixpoint binary_word_or2 (n:nat)(w1 w2:binary_word n) : binary_word n.
 Qed.
 
 Print binary_word_or2.
+
 (* 6.50 p167 *)
+
+(* copy from answer *)
+
+Fixpoint bool_nat_type (n:nat) : Set :=
+  match n with 0 => nat | 1 => bool | S (S n) => bool_nat_type n end.
+
+Fixpoint bool_nat_fun_aux (n:nat) :  bool_nat_type n -> bool_nat_type n :=
+ match n return bool_nat_type n -> bool_nat_type n with
+   0 => S | 1 => negb | S (S n) => bool_nat_fun_aux n
+ end.
+
+Print bool_nat_fun_aux.
+
+Fixpoint bool_nat_fun (n:nat) : bool_nat_type n :=
+ match n return bool_nat_type n with
+   0 => 0 
+ | 1 => true
+ | S (S n) => bool_nat_fun_aux n (bool_nat_fun n)
+ end.
+
+Eval compute in bool_nat_fun_aux 6 (bool_nat_fun 6).
+
+Eval compute in (bool_nat_fun 7).
+
+Eval compute in (bool_nat_fun 9).
+
+Eval compute in (bool_nat_fun 7 : bool).
+
+Eval compute in (bool_nat_fun 6 : nat).
 
 (* 6.51 p169 *)
 

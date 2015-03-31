@@ -154,3 +154,4 @@ End section_for_chapter_4.
 
 ##Chapter 6
 There are too many exercises in this chapter, so I create a single file for chapter 6.
+[Source Code](coq_art_exercise_chapter6.v)
