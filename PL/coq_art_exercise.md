@@ -5,8 +5,15 @@
 * [Chapter 4](#chapter-4)
 * [Chapter 5](#chapter-5)
 * [Chapter 6](#chapter-6)
+* [Chapter 7](#chapter-7)
+* [Chapter 9](#chapter-9)
+* [Chapter 12](#chapter-12)
+* [Chapter 13](#chapter-13)
 
 ##Chapter 3
+
+[Source Code](coq_art_exercise_chapter3.v)
+
 <pre>
 (* Chapter 3 *)
 
@@ -82,6 +89,9 @@ End section_for_chapter_3.
 </pre>
 
 ##Chapter 4
+
+[Source Code](coq_art_exercise_chapter4.v)
+
 <pre>
 Require Import ZArith.
 Section section_for_chapter_4.
@@ -153,5 +163,23 @@ End section_for_chapter_4.
 </pre>
 
 ##Chapter 6
+
 There are too many exercises in this chapter, so I create a single file for chapter 6.
+
 [Source Code](coq_art_exercise_chapter6.v)
+
+##Chapter 7
+
+[Source Code](coq_art_exercise_chapter7.v)
+
+##Chapter 9
+
+[Source Code](coq_art_exercise_chapter9.v)
+
+##Chapter 12
+
+[Source Code](coq_art_exercise_chapter12.v)
+
+##Chapter 13
+
+[Source Code](coq_art_exercise_chapter13.v)
