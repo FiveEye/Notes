@@ -39,3 +39,9 @@ the Christofides' algorithm is a 3/2-approximation algorithm.
 ##2.5 Maximizing float in bank accounts
 
 ##2.6 Finding minimum-degree spanning trees
+
+The locally optimal tree: no move that can reduce the degree of any node having degree between $$\Delta(T) - l$$ and $$\Delta(T)$$.
+
+**Theorem 2.19:** Let T be a locally optimal tree. Then $$\Delta(T) \le 2OPT + l$$, where l = $$\lceil \log_2^n \rceil$$.
+
+**Theorem 2.20:** The algorithm finds a locally optimal tree in polynomial time.
