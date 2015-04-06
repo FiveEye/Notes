@@ -1,4 +1,5 @@
 # Summary
+* [The Design of Approximation Algorithms](Algo/DAA.md)
 * Probabilistic Graphical Models
   * [Representation](ML/PGM_1_Representation.md)
   * [Inference](ML/PGM_2_Inference.md)
