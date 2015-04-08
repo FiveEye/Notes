@@ -2,7 +2,7 @@
 
 ##Algorithm
 
-[**The Design of Approximation Algorithms**](Algo/DAA.md)
+[The Design of Approximation Algorithms](Algo/DAA.md)
 
 
 ##Machine Learning
