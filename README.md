@@ -4,6 +4,7 @@
 
 [The Design of Approximation Algorithms](Algo/DAA.md)
 
+[Lecture notes on metric embeddings](Algo/metric_embedding.md)
 
 ##Machine Learning
 

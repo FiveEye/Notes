@@ -1,5 +1,6 @@
 # Summary
 * [The Design of Approximation Algorithms](Algo/DAA.md)
+* [Lecture notes on metric embeddings](Algo/metric_embedding.md)
 * Probabilistic Graphical Models
   * [Representation](ML/PGM_1_Representation.md)
   * [Inference](ML/PGM_2_Inference.md)
