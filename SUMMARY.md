@@ -12,4 +12,5 @@
 * [Quick Links](Library/README.md)
   * [Algorithm](Library/Algo.md)
   * [Machine Learning](Library/ML.md)
+  * [Programming Language](Libray/PL.md)
   * [Reading List](Library/readinglist.md)

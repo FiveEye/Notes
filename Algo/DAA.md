@@ -4,6 +4,8 @@
 
 [Advanced Algorithms](http://personal.vu.nl/r.a.sitters/AdvancedAlgorithms/)
 
+[Algorithms by Jeff Erickson](http://web.engr.illinois.edu/~jeffe/teaching/algorithms/)
+
 #1 An introduction to approximation algorithms
 
 **Definition 1.1:** An \alpha-approximation algorithm is ...
@@ -44,6 +46,8 @@ the Christofides' algorithm is a 3/2-approximation algorithm.
 
 The locally optimal tree: no move that can reduce the degree of any node having degree between $$\Delta(T) - l$$ and $$\Delta(T)$$.
 
-**Theorem 2.19:** Let T be a locally optimal tree. Then $$\Delta(T) \le 2OPT + l$$, where l = $$\lceil \log_2{n} \rceil$$.
+**Theorem 2.19:** Let T be a locally optimal tree. Then $$\Delta(T) \le 2OPT + l$$, where $$l = \lceil \log_2{n} \rceil$$.
 
 **Theorem 2.20:** The algorithm finds a locally optimal tree in polynomial time.
+
+##
