@@ -7,8 +7,10 @@
   * [Learning](ML/PGM_3_Learning.md)
   * [Background](ML/PGM_A_Background.md)
 * Coq'Art
-  * [reading notes](PL/coq_art_note.md)
-  * [solutions for Coq'Art](PL/coq_art_exercise.md)
+  * [reading notes](PL/Coq/coq_art_note.md)
+  * [solutions for Coq'Art](PL/Coq/coq_art_exercise.md)
+* Scala School
+  * [notes](PL/Scala/scala_school.md)
 * [Quick Links](Library/README.md)
   * [Algorithm](Library/Algo.md)
   * [Machine Learning](Library/ML.md)

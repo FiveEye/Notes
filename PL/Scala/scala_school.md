@@ -1,3 +1,7 @@
 #[Scala School!](https://twitter.github.io/scala_school/index.html)
-  * Basics
-  
+  * [Basics](scala_school_basics.md)
+  * [Basics continued](scala_school_basics2.md)
+  * [Collections](scala_school_collections.md)
+  * [Pattern matching & functional composition](scala_school_PMFC.md)
+  * [Type & polymorphism basics](scala_school_type_basics.md)
+  * [Advanced types](scala_school_advanced_types.md)
