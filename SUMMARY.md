@@ -9,10 +9,15 @@
 * Coq'Art
   * [reading notes](PL/Coq/coq_art_note.md)
   * [solutions for Coq'Art](PL/Coq/coq_art_exercise.md)
-* Scala School
-  * [notes](PL/Scala/scala_school.md)
+* Scala School!
+  * [Basics](PL/Scala/scala_school_basics.md)
+  * [Basics continued](PL/Scala/scala_school_basics2.md)
+  * [Collections](PL/Scala/scala_school_collections.md)
+  * [Pattern matching & functional composition](PL/Scala/scala_school_PMFC.md)
+  * [Type & polymorphism basics](PL/Scala/scala_school_type_basics.md)
+  * [Advanced types](PL/Scala/scala_school_advanced_types.md)
 * [Quick Links](Library/README.md)
   * [Algorithm](Library/Algo.md)
   * [Machine Learning](Library/ML.md)
-  * [Programming Language](Libray/PL.md)
+  * [Programming Language](Library/PL.md)
   * [Reading List](Library/readinglist.md)

@@ -15,3 +15,5 @@
 ##1.5 Inclusions among the classes of $$l_p$$ metrics
 
 #2 Dimension reduction by random projection
+
+#4 Constructing embeddings

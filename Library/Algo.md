@@ -22,6 +22,8 @@
 ##Metric Embeddings
 [Lecture notes on metric embeddings](http://kam.mff.cuni.cz/~matousek/ba-a4.pdf)
 
+[cmu's lecture notes](http://www.cs.cmu.edu/~./anupamg/metrics/lectures/)
+
 
 ##Planar Graph
 [any planar graph is 6-colorable](https://courses.engr.illinois.edu/cs173/fa2010/lectures/planargraphs.pdf)

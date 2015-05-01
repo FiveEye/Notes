@@ -43,6 +43,12 @@
 
 [**Quick Reference**](http://www.cs.cmu.edu/~tom/10601_fall2012/recitations/matlab_quickref.pdf)
 
+##Scala
+
+[**Scala School!**](https://twitter.github.io/scala_school/index.html)
+
+[**Scala  API Doc**](http://www.scala-lang.org/api/current/#package)
+
 ##Others
 
 [**The Implementation of Functional Programming Languages**](http://research.microsoft.com/en-us/um/people/simonpj/papers/slpj-book-1987/)
