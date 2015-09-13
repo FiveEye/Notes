@@ -22,3 +22,5 @@
   * [Machine Learning](Library/ML.md)
   * [Programming Language](Library/PL.md)
   * [Reading List](Library/readinglist.md)
+* Math
+  * [信息论](Math/Element_of_Information_Theory.md)
