@@ -74,13 +74,15 @@ $$I(X;Y) = H(X) + H(Y) - H(X, Y)$$
 ### 2.10 费诺不等式
 
 **定理2.10.1(费诺不等式)**: 对任何满足 $$X \to Y \to\hat{X},$$ 设 $$P_e = Pr\{X \neq \hat{X}\},$$ 有
+
   $$H(P_e) + P_e \log{|\mathcal{X}|} \ge H(X | \hat{X}) \ge H(X | Y)$$
+
 上述不等式可以减弱为
-  $$1 + P_e \log{|\mathcal{X}|} \ge H(X | Y)$$
-或
-  $$P_e \ge \frac{H(X|Y) - 1}{\log{|\mathcal{X}|}}$$
+
+  $$1 + P_e \log{|\mathcal{X}|} \ge H(X | Y)$$ 或 $$P_e \ge \frac{H(X|Y) - 1}{\log{|\mathcal{X}|}}$$
 
 **引理 2.10.1**: 如果X和X'独立同分布,具有熵H(X),则
+
   $$Pr(X = X') \ge 2^{-H(X)}$$
 
 
