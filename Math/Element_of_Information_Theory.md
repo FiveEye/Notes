@@ -17,7 +17,7 @@ $$ H(X, Y) = - \sum_{x \in X} \sum_{y \in Y} p(x,y)\log{p(x,y)}$$
 ### 2.3 相对熵与互信息
 
 **相对熵(relative entropy)**:
-  $$D(p || q) = \sum_{x \ in X} p(x) \log{\frac{p(x)}{q(x)}}=E_p \log{\frac{p(x)}{q(x)}}$$
+  $$D(p || q) = \sum_{x \in X} p(x) \log{\frac{p(x)}{q(x)}}=E_p \log{\frac{p(x)}{q(x)}}$$
 
 **互信息(mutual information)**:
   $$I(X;Y) = \sum_{x \in X} \sum_{y \in Y} p(x,y) \log{\frac{p(x,y)}{p(x)p(y)}} = D(p(x,y)||p(x)p(y))$$
