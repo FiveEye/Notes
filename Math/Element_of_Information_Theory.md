@@ -12,7 +12,7 @@ $$ H(X) = - \sum_{x \in X}{p(x)\log{p(x)}} $$
 
 $$ H(X, Y) = - \sum_{x \in X} \sum_{y \in Y} p(x,y)\log{p(x,y)}$$
 
-$$H()$$
+$$H(Y|X)= \sum_{x \in X}p(x)H(Y|X=x)$$
 
 **定理2.2.1(链式法则)**: $$H(X, Y) = H(x) + H(Y | X)$$
 
