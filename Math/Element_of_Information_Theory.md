@@ -112,6 +112,13 @@ $$H(Y_n | Y_{n-1}, \dots, Y_1, X_1) \le H(\mathcal{Y}) \le H(Y_n | Y_{n-1}, \dot
 
   $$\sum_i D^{-l_i} \le 1$$
 
+
+
+
+
+
+
+
 ## 17 信息论中的不等式
 
 
