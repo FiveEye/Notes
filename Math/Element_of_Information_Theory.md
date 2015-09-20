@@ -113,8 +113,12 @@ $$H(Y_n | Y_{n-1}, \dots, Y_1, X_1) \le H(\mathcal{Y}) \le H(Y_n | Y_{n-1}, \dot
   $$\sum_i D^{-l_i} \le 1$$
 
 
+### 5.3 最优码
+
+$$l_i^* = - \log_D p_i$$
 
 
+### 5.4 最优码长的界
 
 
 
