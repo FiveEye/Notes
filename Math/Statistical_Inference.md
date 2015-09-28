@@ -1,8 +1,8 @@
 #Statistical Inference
 
-## 1 Probability Theory
+# 1 Probability Theory
 
-### 1.1 Set Theory
+## 1.1 Set Theory
 
 **Definition 1.1.1** The set, S, of all possible outcomes of a particular experiment is called the sample space for the experiment.
 
@@ -13,7 +13,7 @@
 **Definition 1.1.6** If $$A_1, A_2, \dots$$ are pairwise disjoint and $$\cup_{i=1}^
 {\infty}A_i = S$$, then the collection $$A_1, A_2, \dots$$ forms a partition of $$S$$.
 
-### 1.2 Basics of Probability Theory
+## 1.2 Basics of Probability Theory
 
 **Definition 1.2.1** A collection of subset of $$S$$ is called a sigma algebra (or Borel field), denoted by B, if it satisfies the following three properties:
 
@@ -28,20 +28,20 @@
 
 
 
-### 1.3 Conditional Probability and Independence
+## 1.3 Conditional Probability and Independence
 
-### 1.4 Random Variables
+## 1.4 Random Variables
 
-### 1.5 Distribution Functions
+## 1.5 Distribution Functions
 
-### 1.6 Density and Mass Functions
-
-
+## 1.6 Density and Mass Functions
 
 
 
-## 2 Transformations and Expectations
 
-## 3 Common Families of Distributions
 
-## 4 Multiple Random Variables
+# 2 Transformations and Expectations
+
+# 3 Common Families of Distributions
+
+# 4 Multiple Random Variables
