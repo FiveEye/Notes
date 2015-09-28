@@ -15,6 +15,19 @@
 
 ### 1.2 Basics of Probability Theory
 
+**Definition 1.2.1** A collection of subset of $$S$$ is called a sigma algebra (or Borel field), denoted by B, if it satisfies the following three properties:
+
+  * $$\emptyset \in B$$.
+  * If $$A \in B$$, then $$A^c \in B$$.
+  * If $$A_1, A_2, \dots \in B$$, then $$\cup_{i=1}^{\infty}A_i \in B$$.
+
+**Definition 1.2.4** Given a sample space $$S$$ and an associated sigma algebra $$B$$, a probability function $$P$$ with domain $$B$$ that satisfies
+  * $$P(A) \ge 0$$ for all $$A \in B$$.
+  * $$P(S) = 1$$.
+  * If $$A_1, A_2, \dots \in B$$ are pairwise disjoint, then $$P(\cup_{i=1}^{\infty}A_i)= \sum_{i=1}^{\infty}P(A_i)$$.
+
+
+
 ### 1.3 Conditional Probability and Independence
 
 ### 1.4 Random Variables
