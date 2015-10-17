@@ -17,3 +17,5 @@ Abstracting Abstract Machines
 [Cover tree](http://videolectures.net/solomon_langford_fenna/)
 
 [Type Theory](http://www.cse.chalmers.se/~coquand/type.html)
+
+[Ziggurat algorithm](https://en.wikipedia.org/wiki/Ziggurat_algorithm): a rejection sampling algorithm
