@@ -23,4 +23,5 @@
   * [Programming Language](Library/PL.md)
   * [Reading List](Library/readinglist.md)
 * Math
+  * [Statistical Inference](Math/Statistical_Inference.md)
   * [信息论](Math/Element_of_Information_Theory.md)
