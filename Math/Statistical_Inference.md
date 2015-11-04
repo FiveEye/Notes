@@ -37,9 +37,6 @@
 ## 1.6 Density and Mass Functions
 
 
-
-
-
 # 2 Transformations and Expectations
 
 # 3 Common Families of Distributions
