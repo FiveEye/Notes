@@ -27,7 +27,6 @@
   * If $$A_1, A_2, \dots \in B$$ are pairwise disjoint, then $$P(\cup_{i=1}^{\infty}A_i)= \sum_{i=1}^{\infty}P(A_i)$$.
 
 
-
 ## 1.3 Conditional Probability and Independence
 
 ## 1.4 Random Variables
@@ -38,6 +37,11 @@
 
 
 # 2 Transformations and Expectations
+
+## 2.1 Distribution of Functions of a Random Variable
+
+
+
 
 # 3 Common Families of Distributions
 
