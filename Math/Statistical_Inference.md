@@ -40,9 +40,25 @@
 
 ## 2.1 Distribution of Functions of a Random Variable
 
+## 2.2 Expected Values
 
+## 2.3 Moments and Moment Generating Functions
 
+## 2.4 Differentiating Under an Integral Sign
+
+## 2.6 Miscellanea
 
 # 3 Common Families of Distributions
+
+## 3.1 Introduction
+
+## 3.2 Discrete Distribution
+
+Discrete Uniform Distribution
+
+$$
+P(X)
+$$
+
 
 # 4 Multiple Random Variables
