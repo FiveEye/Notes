@@ -55,10 +55,44 @@
 ## 3.2 Discrete Distribution
 
 **Discrete Uniform Distribution**
+$$
+P(X=x|N) = \frac{1}{N}, \quad x = 1,2,\dots,N. \\
+\mathrm{E}X = \frac{N+1}{2} \\
+\mathrm{Var}X = \frac{(N+1)(N-1)}{12} \\
+$$
+
+**Hypergeometric Distribution**
 
 $$
-P(X=x|N) = \frac{1}{N}, \quad x = 1,2,\dots,N,
+P(X=x|N,M,K) = \frac{\binom{M}{x}\binom{N-M}{K-x}}{\binom{N}{K}}, \quad x = 0,1,\dots,K.
 $$
+
+**Binomial Distribution**
+
+**Poisson Distribution**
+
+**Negative Binomial Distribution**
+
+**Geometric Distribution**
+
+## 3.3 Continuous Distribution
+
+**Uniform Distribution**
+
+**Gamma Distribution**
+
+**Normal Distribution**
+
+**Beta Distribution**
+
+**Cauchy Distribution**
+
+**Lognormal Distribution**
+
+**Double Exponential Distribution**
+
+## 3.4 Exponential Families
+
 
 
 # 4 Multiple Random Variables
