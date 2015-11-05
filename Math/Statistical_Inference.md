@@ -57,7 +57,7 @@
 Discrete Uniform Distribution
 
 $$
-P(X)
+P(X=x|N) = \frac{1}{N}, x = 1,2,\dots,N,
 $$
 
 
