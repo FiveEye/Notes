@@ -54,10 +54,10 @@
 
 ## 3.2 Discrete Distribution
 
-Discrete Uniform Distribution
+**Discrete Uniform Distribution**
 
 $$
-P(X=x|N) = \frac{1}{N}, x = 1,2,\dots,N,
+P(X=x|N) = \frac{1}{N}, \quad x = 1,2,\dots,N,
 $$
 
 
