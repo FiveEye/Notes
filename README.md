@@ -6,6 +6,10 @@
 
 [Lecture notes on metric embeddings](Algo/metric_embedding.md)
 
+##Math
+
+[Statistical Inference](Math/Statistical_Inference.md)
+
 ##Machine Learning
 
 **Probabilistic Graphical Models**
