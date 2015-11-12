@@ -90,11 +90,19 @@ $$
 **Negative Binomial Distribution**
 
 $$
-P()
+P(X=x|r,p)=\binom{x-1}{r-1}p^r(1-p)^{x-r}, \quad x = r, r + 1, \dots \\
+\mathrm{E}X = r\frac{1-p}{p} \\
+\mathrm{Var}X = \frac{r(1-p)}{p^2} \\
 $$
 
 
 **Geometric Distribution**
+
+$$
+P(X=x|p)=p(1-p)^{x-1}, \quad x = 1, 2, \dots \\
+\mathrm{E}X = \frac{1}{p} \\
+\mathrm{Var}X = \frac{1-p}{p^2} \\
+$$
 
 ## 3.3 Continuous Distribution
 
