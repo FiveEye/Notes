@@ -64,12 +64,24 @@ $$
 **Hypergeometric Distribution**
 
 $$
-P(X=x|N,M,K) = \frac{\binom{M}{x}\binom{N-M}{K-x}}{\binom{N}{K}}, \quad x = 0,1,\dots,K.
+P(X=x|N,M,K) = \frac{\binom{M}{x}\binom{N-M}{K-x}}{\binom{N}{K}}, \quad x = 0,1,\dots,K. \\
+\mathrm{E}X = \frac{KM}{N} \\
+\mathrm{Var}X = \frac{KM}{N}(\frac{(N-M)(N-K)}{N(N-1)}) \\
 $$
 
 **Binomial Distribution**
 
+$$
+P(X=x|n,p) = \binom{n}{x}p^x(1-p)^{n-x}, x=0,1,\dots,n. \\
+\mathrm{E}X = np \\
+\mathrm{Var}X = np(1-p) \\
+$$
+
 **Poisson Distribution**
+
+$$
+
+$$
 
 **Negative Binomial Distribution**
 
