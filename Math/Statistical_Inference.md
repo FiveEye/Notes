@@ -72,18 +72,27 @@ $$
 **Binomial Distribution**
 
 $$
-P(X=x|n,p) = \binom{n}{x}p^x(1-p)^{n-x}, x=0,1,\dots,n. \\
+P(X=x|n,p) = \binom{n}{x}p^x(1-p)^{n-x}, \quad x=0,1,\dots,n. \\
 \mathrm{E}X = np \\
 \mathrm{Var}X = np(1-p) \\
+\mathrm{M}_X(t) = [pe^t + (1-p)]^n \\
 $$
 
 **Poisson Distribution**
 
 $$
-
+P(X = x | \lambda) = \frac{e^{-\lambda}\lambda^x}{x!}, \quad x = 0, 1, \dots \\
+\mathrm{E}X = \lambda \\
+\mathrm{Var}X = \lambda \\
+\mathrm{M}_X(t) = e^{\lambda(e^\lambda-1)} \\
 $$
 
 **Negative Binomial Distribution**
+
+$$
+P()
+$$
+
 
 **Geometric Distribution**
 
