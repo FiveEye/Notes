@@ -46,13 +46,13 @@
 
 ## 2.4 Differentiating Under an Integral Sign
 
-**Theorem 2.4.1 (Leibnitz's Rule)**:
+**Theorem 2.4.1 (Leibnitz's Rule)**: If $$f(x,\theta), a(\theta), b(\theta)$$ are differentiable with respect to $$\theta$$, then
 $$
 \frac{d}{d\theta}\int_{a(\theta)}^{b(\theta)}f(x,\theta)dx=f(b(\theta),\theta)\frac{d}{d\theta}b(\theta)
  - f(a(\theta),\theta)\frac{d}{d\theta}a(\theta)+\int_{a(\theta)}^{b(\theta)}\frac{d}{d\theta}f(x,\theta)dx
 $$
 
-Notice that if a(\theta) and b(\theta) are constant, we have a special case of Leibnitz's Rule:
+Notice that if $$a(\theta)$$ and $$b(\theta)$$ are constant, we have a special case of Leibnitz's Rule:
 
 $$
 \frac{d}{d\theta}\int_{a}^{b}f(x,\theta)dx=\int_{a}^{b}\frac{d}{d\theta}f(x,\theta)dx
