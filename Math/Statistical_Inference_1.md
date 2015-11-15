@@ -1,4 +1,4 @@
-#Statistical Inference
+#Statistical Inference 1
 
 # 1 Probability Theory
 
