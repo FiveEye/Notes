@@ -8,7 +8,7 @@
 
 ##Math
 
-[Statistical Inference](Math/Statistical_Inference.md)
+[Statistical Inference](Math/Statistical_Inference_1.md)
 
 ##Machine Learning
 
