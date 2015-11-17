@@ -70,64 +70,64 @@ $$
 **Discrete Uniform Distribution**
 
 $$
-\begin{eqnarray*}
+\begin{eqnarray}
 P(X=x|N) &=& \frac{1}{N}, \quad x = 1,2,\dots,N. \\
 \mathrm{E}X &=& \frac{N+1}{2} \\
 \mathrm{Var}X &=& \frac{(N+1)(N-1)}{12} \\
-\end{eqnarray*}
+\end{eqnarray}
 $$
 
 **Hypergeometric Distribution**
 
 $$
-\begin{eqnarray*}
+\begin{eqnarray}
 P(X=x|N,M,K) &=& \frac{\binom{M}{x}\binom{N-M}{K-x}}{\binom{N}{K}}, \quad x = 0,1,\dots,K. \\
 \mathrm{E}X &=& \frac{KM}{N} \\
 \mathrm{Var}X &=& \frac{KM}{N}(\frac{(N-M)(N-K)}{N(N-1)}) \\
-\end{eqnarray*}
+\end{eqnarray}
 $$
 
 **Binomial Distribution**
 
 $$
-\begin{eqnarray*}
+\begin{eqnarray}
 P(X=x|n,p) &=& \binom{n}{x}p^x(1-p)^{n-x}, \quad x=0,1,\dots,n. \\
 \mathrm{E}X &=& np \\
 \mathrm{Var}X &=& np(1-p) \\
 \mathrm{M}_X(t) &=& [pe^t + (1-p)]^n \\
-\end{eqnarray*}
+\end{eqnarray}
 $$
 
 **Poisson Distribution**
 
 $$
-\begin{eqnarray*}
+\begin{eqnarray}
 P(X = x | \lambda) &=& \frac{e^{-\lambda}\lambda^x}{x!}, \quad x = 0, 1, \dots \\
 \mathrm{E}X &=& \lambda \\
 \mathrm{Var}X &=& \lambda \\
 \mathrm{M}_X(t) &=& e^{\lambda(e^\lambda-1)} \\
-\end{eqnarray*}
+\end{eqnarray}
 $$
 
 **Negative Binomial Distribution**
 
 $$
-\begin{eqnarray*}
+\begin{eqnarray}
 P(X=x|r,p) &=& \binom{x-1}{r-1}p^r(1-p)^{x-r}, \quad x = r, r + 1, \dots \\
 \mathrm{E}X &=& r\frac{1-p}{p} \\
 \mathrm{Var}X &=& \frac{r(1-p)}{p^2} \\
-\end{eqnarray*}
+\end{eqnarray}
 $$
 
 
 **Geometric Distribution**
 
 $$
-\begin{eqnarray*}
+\begin{eqnarray}
 P(X=x|p) &=& p(1-p)^{x-1}, \quad x = 1, 2, \dots \\
 \mathrm{E}X &=& \frac{1}{p} \\
 \mathrm{Var}X &=& \frac{1-p}{p^2} \\
-\end{eqnarray*}
+\end{eqnarray}
 $$
 
 ## 3.3 Continuous Distribution
@@ -135,11 +135,11 @@ $$
 **Uniform Distribution**
 
 $$
-\begin{eqnarray*}
+\begin{eqnarray}
 f(x|a,b) &=& 1/(b - a), \quad x \in [a, b] \\
 \mathrm{E}X &=& (b+a)/2 \\
 \mathrm{Var}X &=& (b-a)^2/12 \\
-\end{eqnarray*}
+\end{eqnarray}
 $$
 
 **Gamma Distribution**
@@ -147,62 +147,62 @@ $$
 the gamma function: $$\Gamma(\alpha) = \int_0^{\infty} t^{\alpha-1}e^{-t}dt$$
 
 $$
-\begin{eqnarray*}
+\begin{eqnarray}
 f(x|\alpha, \beta) &=& \frac{1}{\Gamma(\alpha)\beta^\alpha}x^{\alpha-1}e^{-x/\beta}, \quad 0 < x < \infty,\alpha > 0, \beta > 0 \\
 \mathrm{E}X &=& \alpha\beta\\
 \mathrm{Var}X &=& \alpha\beta^2\\
 \mathrm{M}_X(t) &=& (1-\beta t)^{-\alpha}\\
-\end{eqnarray*}
+\end{eqnarray}
 $$
 
 **Normal Distribution**
 
 $$
-\begin{eqnarray*}
+\begin{eqnarray}
 f(x) &=& \\
 \mathrm{E}X &=& \\
 \mathrm{Var}X &=& \\
-\end{eqnarray*}
+\end{eqnarray}
 $$
 
 **Beta Distribution**
 
 $$
-\begin{eqnarray*}
+\begin{eqnarray}
 f(x) &=& \\
 \mathrm{E}X &=& \\
 \mathrm{Var}X &=& \\
-\end{eqnarray*}
+\end{eqnarray}
 $$
 
 **Cauchy Distribution**
 
 $$
-\begin{eqnarray*}
+\begin{eqnarray}
 f(x) &=& \\
 \mathrm{E}X &=& \\
 \mathrm{Var}X &=& \\
-\end{eqnarray*}
+\end{eqnarray}
 $$
 
 **Lognormal Distribution**
 
 $$
-\begin{eqnarray*}
+\begin{eqnarray}
 f(x) &=& \\
 \mathrm{E}X &=& \\
 \mathrm{Var}X &=& \\
-\end{eqnarray*}
+\end{eqnarray}
 $$
 
 **Double Exponential Distribution**
 
 $$
-\begin{eqnarray*}
+\begin{eqnarray}
 f(x) &=& \\
 \mathrm{E}X &=& \\
 \mathrm{Var}X &=& \\
-\end{eqnarray*}
+\end{eqnarray}
 $$
 ## 3.4 Exponential Families
 
