@@ -158,9 +158,9 @@ $$
 
 $$
 \begin{eqnarray}
-f(x) &=& \\
-\mathrm{E}X &=& \\
-\mathrm{Var}X &=& \\
+f(x|\mu,\sigma) &=& \frac{1}{\sqrt{2\pi}}e^{-(x-\mu)^2/(2\sigma^2)}, \quad -\infty < x < \infty.\\
+\mathrm{E}X &=& \mu\\
+\mathrm{Var}X &=& \sigma^2\\
 \end{eqnarray}
 $$
 
