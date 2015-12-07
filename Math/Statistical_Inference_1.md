@@ -203,6 +203,25 @@ f(x) &=& \\
 \mathrm{Var}X &=& \\
 \end{eqnarray}
 $$
+
 ## 3.4 Exponential Families
 
+## 3.5 Location and Scale Families
+
+## 3.6 Inequalities and Identities
+
 # 4 Multiple Random Variables
+
+## 4.1 Joint and Marginal Distributions
+
+## 4.2 Conditional Distributions and Independence
+
+## 4.3 Bivariate Transformations
+
+## 4.4 Hierarchical Models and Mixture Distributions
+
+## 4.5 Covariance and Correlation
+
+## 4.6 Multivariate Distributions
+
+## 4.7 Inequalities
