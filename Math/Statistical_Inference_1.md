@@ -205,6 +205,4 @@ f(x) &=& \\
 $$
 ## 3.4 Exponential Families
 
-
-
 # 4 Multiple Random Variables
