@@ -34,6 +34,7 @@
 
 ## 1.6 Density and Mass Functions
 
+## 1.8 Miscellanea
 
 # 2 Transformations and Expectations
 
@@ -210,6 +211,8 @@ $$
 
 ## 3.6 Inequalities and Identities
 
+## 3.8 Miscellanea
+
 # 4 Multiple Random Variables
 
 ## 4.1 Joint and Marginal Distributions
@@ -225,3 +228,5 @@ $$
 ## 4.6 Multivariate Distributions
 
 ## 4.7 Inequalities
+
+## 4.9 Miscellanea
