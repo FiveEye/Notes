@@ -239,7 +239,7 @@ $$
 \mathrm{Cov}(X,Y) = \mathrm{E}XY - \mu_X \mu_Y
 $$.
 
-**Theorem 4.5.5**: If $$X$$ and $$Y$$ are independent random variables, then $$\mathrm{Cov}(X,Y) = 0$$ and $$\rho_{XY} = 0$$.
+**Theorem 4.5.5** If $$X$$ and $$Y$$ are independent random variables, then $$\mathrm{Cov}(X,Y) = 0$$ and $$\rho_{XY} = 0$$.
 
 ## 4.6 Multivariate Distributions
 
