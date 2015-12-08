@@ -241,6 +241,13 @@ $$.
 
 **Theorem 4.5.5** If $$X$$ and $$Y$$ are independent random variables, then $$\mathrm{Cov}(X,Y) = 0$$ and $$\rho_{XY} = 0$$.
 
+
+**Theorem 4.5.6** If $$X$$ and $$Y$$ are any two random variables and $$a$$ and $$b$$ are any two constants, then
+
+$$
+  \mathrm{Var}(aX+bY)=a^2\mathrm{Var}X+b^2\mathrm{Var}Y+2ab\mathrm{Cov}(X,Y)
+$$.
+
 ## 4.6 Multivariate Distributions
 
 ## 4.7 Inequalities
