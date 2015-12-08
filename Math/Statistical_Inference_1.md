@@ -217,8 +217,7 @@ $$
 
 ## 4.1 Joint and Marginal Distributions
 
-
-
+The marginal pmf
 
 ## 4.2 Conditional Distributions and Independence
 
