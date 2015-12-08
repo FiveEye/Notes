@@ -227,6 +227,12 @@ The marginal pmf
 
 ## 4.5 Covariance and Correlation
 
+$$\mathrm{E}X = \mu_X, \mathrm{E}Y = \mu_Y, \mathrm{Var}X = \sigma^2_X, \mathrm{Var}Y = \sigma^2_Y$$
+
+covariance: $$\mathrm{Cov}(X,Y) = \mathrm{E}((X - \mu_X)(Y - \mu_Y))$$
+
+correlation: $$\rho_{XY} = \mathrm{Cov}(X,Y)/(\sigma_X \sigma_Y)$$
+
 ## 4.6 Multivariate Distributions
 
 ## 4.7 Inequalities
