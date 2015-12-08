@@ -245,6 +245,17 @@ $$.
 
 ## 4.7 Inequalities
 
+### 4.7.1 Numerical Inequalities
+
+### 4.7.2 Functional Inequalities
+
+**Theorem 4.7.7 (Jensen's Inequality)**
+
+**Theorem 4.7.8 (An inequality for means)**
+
+**Theorem 4.7.9 (Covariance Inequality)**
+
+
 ## 4.9 Miscellanea
 
 
