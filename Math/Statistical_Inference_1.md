@@ -217,6 +217,9 @@ $$
 
 ## 4.1 Joint and Marginal Distributions
 
+
+
+
 ## 4.2 Conditional Distributions and Independence
 
 ## 4.3 Bivariate Transformations
@@ -230,3 +233,25 @@ $$
 ## 4.7 Inequalities
 
 ## 4.9 Miscellanea
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
