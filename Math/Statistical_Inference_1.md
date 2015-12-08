@@ -233,7 +233,7 @@ covariance: $$\mathrm{Cov}(X,Y) = \mathrm{E}((X - \mu_X)(Y - \mu_Y))$$
 
 correlation: $$\rho_{XY} = \mathrm{Cov}(X,Y)/(\sigma_X \sigma_Y)$$
 
-**Theorem 4.5.3**: For any random variables $$X$$ and $$Y$$,
+**Theorem 4.5.3** For any random variables $$X$$ and $$Y$$,
 
 $$
 \mathrm{Cov}(X,Y) = \mathrm{E}XY - \mu_X \mu_Y
