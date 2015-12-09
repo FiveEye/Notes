@@ -152,11 +152,11 @@ $$
 
 **Gamma Distribution**
 
-the gamma function: $$\Gamma(\alpha) = \int_0^{\infty} t^{\alpha-1}e^{-t}dt$$
+$$\Gamma(\alpha) = \int_0^{\infty} t^{\alpha-1}e^{-t}dt$$.
 
 $$
 \begin{eqnarray}
-f(x|\alpha, \beta) &=& \frac{1}{\Gamma(\alpha)\beta^\alpha}x^{\alpha-1}e^{-x/\beta}, \quad 0 < x < \infty,\alpha > 0, \beta > 0 \\
+f(x|\alpha, \beta) &=& \frac{1}{\Gamma(\alpha)\beta^\alpha}x^{\alpha-1}e^{-x/\beta}, \quad 0 < x < \infty,\alpha > 0, \beta > 0\\
 \mathrm{E}X &=& \alpha\beta\\
 \mathrm{Var}X &=& \alpha\beta^2\\
 \mathrm{M}_X(t) &=& (1-\beta t)^{-\alpha}\\
@@ -167,7 +167,7 @@ $$
 
 $$
 \begin{eqnarray}
-f(x|\mu,\sigma) &=& \frac{1}{\sqrt{2\pi}}e^{-(x-\mu)^2/(2\sigma^2)}, \quad -\infty < x < \infty.\\
+f(x|\mu,\sigma) &=& \frac{1}{\sqrt{2\pi}}e^{-(x-\mu)^2/(2\sigma^2)}, \quad -\infty < x < \infty\\
 \mathrm{E}X &=& \mu\\
 \mathrm{Var}X &=& \sigma^2\\
 \end{eqnarray}
@@ -175,11 +175,13 @@ $$
 
 **Beta Distribution**
 
+$$B(\alpha, \beta)= \int_0^1 x^{\alpha-1}(1-x)^{\beta-1}dx$$.
+
 $$
 \begin{eqnarray}
-f(x) &=& \\
-\mathrm{E}X &=& \\
-\mathrm{Var}X &=& \\
+f(x|\alpha,\beta) &=& \frac{1}{B(\alpha,\beta)}x^{\alpha-1}(1-x)^{\beta-1}, \quad 0 < x < 1, \alpha > 0, \beta > 0\\
+\mathrm{E}X &=& \frac{\alpha}{\alpha+\beta}\\
+\mathrm{Var}X &=& \frac{\alpha \beta}{(\alpha + \beta)^2(\alpha + \beta + 1)}\\
 \end{eqnarray}
 $$
 
@@ -187,9 +189,8 @@ $$
 
 $$
 \begin{eqnarray}
-f(x) &=& \\
-\mathrm{E}X &=& \\
-\mathrm{Var}X &=& \\
+f(x|\theta) &=& \frac{1}{\pi}\frac{1}{1+(x-\theta)^2}, \quad -\infty < x < \infty, -\infty < \theta < \infty\\
+\mathrm{E}|X| &=& \infty\\
 \end{eqnarray}
 $$
 
@@ -197,9 +198,9 @@ $$
 
 $$
 \begin{eqnarray}
-f(x) &=& \\
-\mathrm{E}X &=& \\
-\mathrm{Var}X &=& \\
+f(x|\mu,\sigma^2) &=& \frac{1}{\sqrt{2\pi}\sigma}\frac{1}{x}e^{-(\log{x}-\mu)^2/(2\sigma^2)}, \quad 0 < x < \infty, -\infty < \mu < \infty, \sigma > 0\\
+\mathrm{E}X &=& e^{\mu + (\sigma^2/2)}\\
+\mathrm{Var}X &=& e^{2(\mu+\sigma^2)}-e^{2\mu+\sigma^2}\\
 \end{eqnarray}
 $$
 
@@ -207,13 +208,19 @@ $$
 
 $$
 \begin{eqnarray}
-f(x) &=& \\
-\mathrm{E}X &=& \\
-\mathrm{Var}X &=& \\
+f(x|\mu,\sigma) &=& \frac{1}{2\sigma}e^{-|x-\mu|/\sigma}, \quad -\infty < x < \infty, -\infty < \mu < \infty, \sigma > 0\\
+\mathrm{E}X &=& \mu\\
+\mathrm{Var}X &=& 2\sigma^2\\
 \end{eqnarray}
 $$
 
 ## 3.4 Exponential Families
+
+A family of pdfs or pmfs is called an exponential family if it can be expressed as
+
+$$
+f(x|\theta) = h(x)c(\theta)\exp(\sum_{i=1}^k w_i(\theta)t_i(x)).
+$$
 
 ## 3.5 Location and Scale Families
 
