@@ -48,7 +48,7 @@ categories: Math
 
 ## 2.1 Distribution of Functions of a Random Variable
 
-**Theorem 2.1.4** Let X have pdf f_X(x) and let Y = g(X), where g is a monotone function. Let X and Y be defined by (2.1.7). Suppose that f_X(x) is continuous on X and that g^{-1}(y) has a continuous derivative on Y. Then the pdf of Y is given by
+**Theorem 2.1.4** Let $$X$$ have pdf $$f_X(x)$$ and let $$Y = g(X)$$, where $$g$$ is a monotone function. Let $$X$$ and $$Y$$ be defined by (2.1.7). Suppose that $$f_X(x)$$ is continuous on $$X$$ and that $$g^{-1}(y)$$ has a continuous derivative on $$Y$$. Then the pdf of $$Y$$ is given by
 
 $$
 f_Y(y) = f_X(g^{-1}(y))|\frac{d}{dy}g^{-1}(y)| \quad y \in Y
