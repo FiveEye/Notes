@@ -248,11 +248,37 @@ $$
   \mathrm{Var}(aX+bY)=a^2\mathrm{Var}X+b^2\mathrm{Var}Y+2ab\mathrm{Cov}(X,Y)
 $$.
 
+**Theorem 4.5.7** For any random variables $$X$$ and $$Y$$,
+  * $$-1 \le \rho_{XY} \le 1$$
+  * $$|\rho_{XY}| = 1$$ if and only if there exist numbers $$a \neq 0$$ and $$b$$ such that $$P(Y = aX + b) = 1$$. If $$\rho_{XY}=1$$, then $$a > 0$$, and if $$\rho_{XY} = -1$$, then $$a < 0$$.
+
+
+
 ## 4.6 Multivariate Distributions
+
+
+
 
 ## 4.7 Inequalities
 
 ### 4.7.1 Numerical Inequalities
+
+**Lemma 4.7.1** Let a and b be any positive numbers, and let p and q be any positive numbers (necessarily greater than 1) satisfying
+$$
+1/p + 1/q = 1.
+$$
+Then,
+$$
+(1/p)a^p + (1/q)b^q \ge ab
+$$
+with equality if and only $$a^p = b^q$$.
+
+**Theorem 4.7.2 (Holder's Inequality)** Let X and Y be any two random variables, and let p and q satisfy. Then
+$$
+|\mathrm{E}XY| \le \mathrm{E}|XY| \le (\mathrm{E}|X|^p)^{1/p} (\mathrm{E}|Y|^q)^{1/q}
+$$.
+
+
 
 ### 4.7.2 Functional Inequalities
 
