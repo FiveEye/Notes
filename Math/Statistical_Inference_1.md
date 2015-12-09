@@ -314,11 +314,13 @@ $$
 **Theorem 4.7.9 (Covariance Inequality)** Let $$X$$ be any random variable and $$g(x)$$ and $$h(x)$$ any functions such that $$\mathrm{E}g(X)$$, $$\mathrm{E}h(X)$$, and $$\mathrm{E}(g(X)h(X))$$ exist.
 
   * If $$g(x)$$ is a nondecreasing function and $$h(x)$$ is a nonincreasing function, then
+    
     $$
     \mathrm{E}(g(X)h(X)) \le (\mathrm{E}g(X))(\mathrm{E}h(X)).
     $$
     
   * If $$g(x)$$ and $$h(x)$$ are either both nondecreasing or both nonincreasing, then
+    
     $$
     \mathrm{E}(g(X)h(X)) \ge (\mathrm{E}g(X))(\mathrm{E}h(X)).
     $$
