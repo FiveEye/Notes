@@ -1,3 +1,10 @@
+---
+layout: post
+title: "Statistical Inference 1"
+date: 2015-12-07 17:28:00 -0800
+categories: Math
+---
+
 #Statistical Inference 1
 
 # 1 Probability Theory
@@ -22,6 +29,7 @@
   * If $$A_1, A_2, \dots \in B$$, then $$\cup_{i=1}^{\infty}A_i \in B$$.
 
 **Definition 1.2.4** Given a sample space $$S$$ and an associated sigma algebra $$B$$, a probability function $$P$$ with domain $$B$$ that satisfies
+
   * $$P(A) \ge 0$$ for all $$A \in B$$.
   * $$P(S) = 1$$.
   * If $$A_1, A_2, \dots \in B$$ are pairwise disjoint, then $$P(\cup_{i=1}^{\infty}A_i)= \sum_{i=1}^{\infty}P(A_i)$$.
@@ -227,7 +235,7 @@ The marginal pmf
 
 ## 4.5 Covariance and Correlation
 
-$$\mathrm{E}X = \mu_X, \mathrm{E}Y = \mu_Y, \mathrm{Var}X = \sigma^2_X, \mathrm{Var}Y = \sigma^2_Y$$
+$$\mathrm{E}X = \mu_X, \mathrm{E}Y = \mu_Y, \mathrm{Var}X = \sigma^2_X, \mathrm{Var}Y = \sigma^2_Y$$.
 
 covariance: $$\mathrm{Cov}(X,Y) = \mathrm{E}((X - \mu_X)(Y - \mu_Y))$$
 
@@ -236,8 +244,8 @@ correlation: $$\rho_{XY} = \mathrm{Cov}(X,Y)/(\sigma_X \sigma_Y)$$
 **Theorem 4.5.3** For any random variables $$X$$ and $$Y$$,
 
 $$
-\mathrm{Cov}(X,Y) = \mathrm{E}XY - \mu_X \mu_Y
-$$.
+  \mathrm{Cov}(X,Y) = \mathrm{E}XY - \mu_X \mu_Y.
+$$
 
 **Theorem 4.5.5** If $$X$$ and $$Y$$ are independent random variables, then $$\mathrm{Cov}(X,Y) = 0$$ and $$\rho_{XY} = 0$$.
 
@@ -249,9 +257,9 @@ $$
 $$.
 
 **Theorem 4.5.7** For any random variables $$X$$ and $$Y$$,
-  * $$-1 \le \rho_{XY} \le 1$$
-  * $$|\rho_{XY}| = 1$$ if and only if there exist numbers $$a \neq 0$$ and $$b$$ such that $$P(Y = aX + b) = 1$$. If $$\rho_{XY}=1$$, then $$a > 0$$, and if $$\rho_{XY} = -1$$, then $$a < 0$$.
 
+  * $$-1 \le \rho_{XY} \le 1$$.
+  * $$\rho_{XY}^2 = 1$$ if and only if there exist numbers $$a \neq 0$$ and $$b$$ such that $$P(Y = aX + b) = 1$$. If $$\rho_{XY}=1$$, then $$a > 0$$, and if $$\rho_{XY} = -1$$, then $$a < 0$$.
 
 
 ## 4.6 Multivariate Distributions
@@ -264,41 +272,49 @@ $$.
 ### 4.7.1 Numerical Inequalities
 
 **Lemma 4.7.1** Let a and b be any positive numbers, and let p and q be any positive numbers (necessarily greater than 1) satisfying
+
 $$
-1/p + 1/q = 1.
+  1/p + 1/q = 1.
 $$
+
 Then,
+
 $$
-(1/p)a^p + (1/q)b^q \ge ab
+  (1/p)a^p + (1/q)b^q \ge ab
 $$
 with equality if and only $$a^p = b^q$$.
 
 **Theorem 4.7.2 (Holder's Inequality)** Let X and Y be any two random variables, and let p and q satisfy. Then
+
 $$
-|\mathrm{E}XY| \le \mathrm{E}|XY| \le (\mathrm{E}|X|^p)^{1/p} (\mathrm{E}|Y|^q)^{1/q}
-$$.
+  |\mathrm{E}XY| \le \mathrm{E}|XY| \le (\mathrm{E}|X|^p)^{1/p} (\mathrm{E}|Y|^q)^{1/q}.
+$$
 
 **Theorem 4.7.5 (Minkowski's Inequality)** Let X and Y be any two random variables. Then for $$1 \le p < \infty$$, 
+
 $$
-[E|X+Y|^p]^{1/p} \le [E|X|^p]^{1/p} + [E|Y|^p]^{1/p}
-$$.
+  [E|X+Y|^p]^{1/p} \le [E|X|^p]^{1/p} + [E|Y|^p]^{1/p}.
+$$
 
 ### 4.7.2 Functional Inequalities
 
 **Theorem 4.7.7 (Jensen's Inequality)** For any random variable X, if g(x) is a convex function, then
+
 $$
-\mathrm{E}(X) \ge g(\mathrm{E}X)
-$$.
+  \mathrm{E}(X) \ge g(\mathrm{E}X).
+$$
 
 **Theorem 4.7.9 (Covariance Inequality)** Let $$X$$ be any random variable and $$g(x)$$ and $$h(x)$$ any functions such that $$\mathrm{E}g(X)$$, $$\mathrm{E}h(X)$$, and $$\mathrm{E}(g(X)h(X))$$ exist.
+
   * If $$g(x)$$ is a nondecreasing function and $$h(x)$$ is a nonincreasing function, then
     $$
-    \mathrm{E}(g(X)h(X)) \le (\mathrm{E}g(X))(\mathrm{E}h(X))
-    $$.
+    \mathrm{E}(g(X)h(X)) \le (\mathrm{E}g(X))(\mathrm{E}h(X)).
+    $$
+    
   * If $$g(x)$$ and $$h(x)$$ are either both nondecreasing or both nonincreasing, then
     $$
-    \mathrm{E}(g(X)h(X)) \ge (\mathrm{E}g(X))(\mathrm{E}h(X))
-    $$.
+    \mathrm{E}(g(X)h(X)) \ge (\mathrm{E}g(X))(\mathrm{E}h(X)).
+    $$
 
 ## 4.9 Miscellanea
 
