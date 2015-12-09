@@ -278,15 +278,20 @@ $$
 |\mathrm{E}XY| \le \mathrm{E}|XY| \le (\mathrm{E}|X|^p)^{1/p} (\mathrm{E}|Y|^q)^{1/q}
 $$.
 
-
+**Theorem 4.7.5 (Minkowski's Inequality)** Let X and Y be any two random variables. Then for $$1 \le p < \infty$$, 
+$$
+[E|X+Y|^p]^{1/p} \le [E|X|^p]^{1/p} + [E|Y|^p]^{1/p}
+$$.
 
 ### 4.7.2 Functional Inequalities
 
-**Theorem 4.7.7 (Jensen's Inequality)**
+**Theorem 4.7.7 (Jensen's Inequality)** For any random variable X, if g(x) is a convex function, then
+$$
+\mathrm{E}(X) \ge g(\mathrm{E}X)
+$$.
 
-**Theorem 4.7.8 (An inequality for means)**
-
-**Theorem 4.7.9 (Covariance Inequality)**
+**Theorem 4.7.9 (Covariance Inequality)** Let $$X$$ be any random variable and $$g(x)$$ and $$h(x)$$ any functions such that $$\mathrm{E}g(X)$$, $$\mathrm{E}h(X)$$, and $$\mathrm{E}(g(X)h(X))$$ exist.
+  * If 
 
 
 ## 4.9 Miscellanea
