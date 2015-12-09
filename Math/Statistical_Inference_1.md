@@ -327,6 +327,11 @@ $$
 
 ## 4.9 Miscellanea
 
+### 4.9.1 The Exchange Paradox
+
+### 4.9.2 More on the Arithmetic-Geometric-Harmonic Mean Inequalilty
+
+### 4.9.3 The Borel Paradox
 
 
 
