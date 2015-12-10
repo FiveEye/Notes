@@ -182,7 +182,9 @@ $$
 
 **Beta Distribution**
 
-$$B(\alpha, \beta)= \int_0^1 x^{\alpha-1}(1-x)^{\beta-1}dx$$.
+$$B(\alpha, \beta) = \int_0^1 x^{\alpha-1}(1-x)^{\beta-1}dx$$.
+
+$$B(\alpha, \beta)= \frac{\Gamma(\alpha)\Gamma(\beta)}{\Gamma(a+b)}$$.
 
 $$
 \begin{eqnarray}
