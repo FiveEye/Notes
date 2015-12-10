@@ -249,6 +249,15 @@ The marginal pmf
 
 ## 4.4 Hierarchical Models and Mixture Distributions
 
+**Theorem 4.4.3** If X and Y are any two random variables, then
+
+$$
+\mathrm{E}X = \mathrm{E}(\mathrm{E}(X|Y))
+$$
+
+
+****
+
 ## 4.5 Covariance and Correlation
 
 $$\mathrm{E}X = \mu_X, \mathrm{E}Y = \mu_Y, \mathrm{Var}X = \sigma^2_X, \mathrm{Var}Y = \sigma^2_Y$$.
