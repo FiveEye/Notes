@@ -252,7 +252,7 @@ The marginal pmf
 **Theorem 4.4.3** If X and Y are any two random variables, then
 
 $$
-\mathrm{E}X = \mathrm{E}(\mathrm{E}(X|Y))
+\mathrm{E}X = \mathrm{E}(\mathrm{E}(X|Y)).
 $$
 
 
