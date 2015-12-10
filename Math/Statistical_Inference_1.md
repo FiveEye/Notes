@@ -59,6 +59,12 @@ $$
 
 ## 2.3 Moments and Moment Generating Functions
 
+**Definition 2.3.6** Let $$X$$ be a random variable with cdf $$F_X$$. The moment generating function (mgf) of $$X$$ (or $$F_X$$), denoted by $$M_X(t)$$, is 
+
+$$
+M_X(t) = \mathrm{E}e^{tX}.
+$$
+
 ## 2.4 Differentiating Under an Integral Sign
 
 **Theorem 2.4.1 (Leibnitz's Rule)** If $$f(x,\theta), a(\theta), b(\theta)$$ are differentiable with respect to $$\theta$$, then
