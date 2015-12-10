@@ -256,7 +256,11 @@ $$
 $$
 
 
-****
+**Theorem 4.4.7** For any two random variables X and Y,
+
+$$
+\mathrm{Var}X = \mathrm{E}(\mathrm{Var}(X|Y)) + \mathrm{Var}(\mathrm{E}(X|Y)).
+$$
 
 ## 4.5 Covariance and Correlation
 
