@@ -22,6 +22,8 @@ categories: Math
 
 ## 1.2 Basics of Probability Theory
 
+### 1.2.1 Axiomatic Foundations
+
 **Definition 1.2.1** A collection of subset of $$S$$ is called a sigma algebra (or Borel field), denoted by B, if it satisfies the following three properties:
 
   * $$\emptyset \in B$$.
